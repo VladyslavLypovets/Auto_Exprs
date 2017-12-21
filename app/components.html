@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-success">Регистрация</button>
+      <button type="button" class="btn btn-primary">Отправить</button>
+      <button type="button" class="btn btn-warning">Сделать заказ</button>
+      <button type="button" class="btn btn-default">Подробнее</button>
+      <button type="button" class="btn btn-info">Поиск</button>
+      <button type="button" class="btn btn-danger">Найти</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <label class="checkbox-inline"><input type="checkbox" value=""></label>
+      <label class="checkbox-inline"><input type="checkbox" value=""></label>
+      <label class="radio-inline"><input type="radio" name="optradio"></label>
+      <label class="radio-inline"><input type="radio" name="optradio"></label>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="form-group">
+        <label for="usr1">Нормальная форма:</label>
+        <input type="text" class="form-control" id="usr1" placeholder="Плейсхолдер">
+      </div>
+      <div class="form-group">
+        <label for="usr2">Заполненная, ативная форма:</label>
+        <input type="text" class="form-control " id="usr2" value="Набранный текст">
+      </div>
+      <div class="form-group has-success">
+        <label for="usr3">Валидная форма:</label>
+        <input type="text" class="form-control" id="usr3" value="Набранный текст">
+      </div>
+      <div class="form-group has-error">
+        <label for="usr4">Форма с ошибкой:</label>
+        <input type="text" class="form-control" id="usr4" value="Набранный текст">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="form-group">
+        <label for="sel2">Выпадающий список:</label>
+        <select class="form-control" id="sel2">
+          <option>Эксперт на день</option>
+          <option>Проверка 1-го авто</option>
+          <option>Подборка под ключ</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Портфолио</a></li>
+        <li><a data-toggle="tab" href="#menu1">Услуги</a></li>
+        <li><a data-toggle="tab" href="#menu2">Проверенные авто</a></li>
+        <li><a data-toggle="tab" href="#menu3">Отзывы</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>HOME</h3>
+          <p>Some content.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Some content in menu 1.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Some content in menu 2.</p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+          <h3>Menu 3</h3>
+          <p>Some content in menu 2.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-body badges-wrap">
+          <a href="#" class="active">Tab <span class="badge">18</span></a><br>
+          <a href="#">Tab 2 <span class="badge">10</span></a><br>
+          <a href="#">tab 3 <span class="badge">8</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-default panel-warning">
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-default panel-danger">
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-default panel-success">
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-default panel-info">
+        <div class="panel-body">Контент</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">Стандартная</div>
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">Информация</div>
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading">Ошибка</div>
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading">Успешно</div>
+        <div class="panel-body">Контент</div>
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading">Предупреждение</div>
+        <div class="panel-body">Контент</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h1>Title H1</h1>
+      <h2>Title H2</h2>
+      <h3>Title H3</h3>
+      <h4>Title H4</h4>
+      <h5>Title H5</h5>
+      <p>TEXT <br>Поиск и подбор автомобиля, по Вашим параметрам. Автомобиль подбирается с учетом Ваших пожеланий и бюджета, мы подберем оптимальный вариант.</p>
+
+    </div>
+  </div>
+  <br><br><br><br><br>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
