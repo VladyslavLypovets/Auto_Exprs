@@ -46,12 +46,13 @@ body
 	overflow-x: hidden
 	opacity: 1
 /*=======Components-style=========*/
+label
+	font-weight: unset
 .container
 	width: 928px
 .btn
 	height: 40px
 	transition: all 0.3s
-	font-family: $semi-font
 .btn-success
 	background: $mid-green
 	border-color: $mid-green
@@ -233,7 +234,7 @@ h1
 	font-family: $bold-font
 h2
 	margin: 16px 0
-	font-size: 36px
+	font-size: 32px
 	color: $black
 	font-family: $semi-font
 h3
@@ -262,16 +263,215 @@ p
 	background-color: $black
 	p
 		color: $white
-		padding: 8px
+		padding: 8px 0
 		display: inline-block
 	.text-right
 		p
+			padding: 8px
 			background-color: #34373c
-
-
-
-
-
+.navbar
+	padding: 23px 0
+	margin: 0
+	.container
+		.navbar-brand
+			padding:  0
+			margin-right: 100px
+			margin-left: 0
+	li
+		&:not(:first-child)
+			margin-left: 16px
+		a
+			display: inline-block
+			&:first-child
+				padding: 8px
+				color: $black_text-color
+				font-family: $semi-font
+				font-size: 17px
+				border-radius: 4px
+				transition: all 0.3s
+				&:hover
+					background-color: $water-blue
+					color: $white
+			&:not(:first-child)
+				padding: 0
+				color: $grey_text-color
+				&:hover
+					background: none
+.navbar-nav.navbar-right
+	li
+		a
+			&:first-child
+				padding: 8px 27px
+				border: 1px solid $gray
+/*=====Main style=====*/
+.info-block
+	background-image: linear-gradient(to top, #33abd0, #4091bf)
+	h1
+		color: $white
+.search_expert
+	margin-right: -15px
+	padding: 15px 0
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $black
+	background: $white
+	font-family: $semi-font
+	border-top-left-radius: 4px
+	border-bottom-left-radius: 4px
+	transition: all 0.3s
+	margin-bottom: 16px
+	margin-top: 20px
+	i
+		margin-right: 5px
+	&:hover
+		color: $white
+		background-color: rgba(255, 255, 255, 0.3)
+		text-decoration: none
+.auto_reliable
+	margin-left: -15px
+	padding: 15px 0
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $white
+	background-color: rgba(255, 255, 255, 0.3)
+	font-family: $semi-font
+	border-top-right-radius: 4px
+	border-bottom-right-radius: 4px
+	transition: all 0.3s
+	margin-bottom	: 32px
+	margin-top: 20px
+	i
+		margin-right: 5px
+	&:hover
+		color: $black
+		background: $white
+		text-decoration: none
+.info-block
+	label
+		color: $white
+		font-size: 13px
+		font-family: $semi-font
+		span
+			font-family: $default-font
+	.price-filter-wrap
+		display: flex
+		justify-content: center
+		align-items: center
+		span
+			width: 9px
+			height: 1px
+			background: $white
+			margin: 0 8px
+		.form-control
+			text-align: center
+	.text-center
+		a
+			font-size: 14px
+			color: $white
+			text-decoration: underline
+			font-family: $default-font
+		button
+			margin: 16px 0 65px
+			width: 192px
+		i
+			color: $white
+	h3
+		color: $white
+	p
+		color: $white
+		font-size: 16px
+		margin-bottom: 16px
+	.font-weight-bold
+		font-family: $semi-font
+.block-wrap
+	padding: 48px 0
+.sub-title
+	position: relative
+	padding-bottom: 16px
+	&:after
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		content: " "
+		display: block
+		width: 104px
+		height: 2px
+		background: $water-blue
+.thumbnail
+	padding: 0
+	margin: 16px 0
+	border: none
+	border-radius: 0
+	img
+		border: 2px solid $gray
+		border-radius: 4px
+	a
+		display: block
+		position: relative
+		.expert-img_overllay
+			position: absolute
+			top: 0
+			height: 100%
+			width: 100%
+			display: flex
+			justify-content: center
+			flex-direction: column
+			padding: 0 32px
+			background-color: rgba(83, 83, 83, 0.6)
+			opacity: 0
+			transition: all 0.3s
+			button
+				margin-bottom: 8px
+				height: 30px
+				font-family: $semi-font
+				line-height: 1
+		&:hover
+			.expert-img_overllay
+				opacity: 1
+	.caption
+		padding: 9px 0
+		.expert_name
+			color: $black
+			margin-bottom: 15px
+			font-family: $semi-font
+			i
+				color: $mid-green
+				margin-left: 13px
+.label
+	padding: 0 8px
+	line-height: 21px
+	border-radius: 100px
+	font-weight: unset
+	font-family: $default-font
+.label-success
+	background-color: $mid-green
+.label-danger
+	background-color: $red
+.label-warning
+	background-color: #eca700
+.labels-wrap
+	display: flex
+	justify-content: space-between
+	.reviews_number
+		color: #808080
+.show_more
+	width: 100%
+	font-size: 16px
+	color: $black
+	font-family: $semi-font
+.for_customer
+	background-color: #fbfbfb
+	.btn
+		width: 100%
+		margin: 16px 0
+.for_customer_left-column
+	margin-top: 16px
+	p
+		margin: 16px 0
+		font-size: 13px
 
 
 @import "media" // Всегда в конце
