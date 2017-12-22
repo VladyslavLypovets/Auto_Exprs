@@ -270,8 +270,62 @@ p
 
 
 
+/*====Open Post Page Style Start=====*/
 
+.breadcrumb
+    margin: 0px
+    li
+        color: $water-blue
+        font-size: 13px
+    li+li
+        &:before
+            content: '\f105'
+            font-family: $font-awesome
+            color: $black
+            padding: 0px 15px
+    a
+        color: $black
+        font-size: 13px
+  
+.container
+    h6
+        font-size: 13px
+        color: $gray
+        padding: 10px 0px
+    span
+        color: $gray
+        font-size: 14px
+        padding-right: 10px
+        
+    i
+        color: $gray
+        font-size: 14px
+        padding: 0px
+    p
+        font-size: 16px
+        padding: 10px 0px
+        
+    img
+        width: 287px
+        height: 180px
+        margin-right: 5px
+        
+        
+    li
+        color: $water-blue
+        font-size: 13px
+        
+.breadcrumb
+        background: none
+    
+    
+.col-sm-4
+        display: flex
+        justify-content: flex-end
+        
+        
 
-
+        
+/*====Open Post Page Style End=====*/
 
 @import "media" // Всегда в конце
