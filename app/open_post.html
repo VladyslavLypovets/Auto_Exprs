@@ -106,26 +106,44 @@
                         Решил поставить диски большего размера. А что такое тоже бывает, «катался» скажем на 14 диаметре, а сейчас решил поставить 15 на зиму, ну и литье прикупил, а старые скидываешь.<br>
                         ШИНОМОНТАЖ. Зачастую к ним приносят много резины и они их скупают (дешевле конечно), затем продают. Эдакие «перекупы» Резина из-за границы. Скажем Европа, Япония и т.д. Бывают от туда привозят много шин, но зимняя — как правило либо «ЕВРОЗИМА», либо липучка, их так же продают у нас.
                     </p>
+                    <div class="form-group">
+                      <label for="comment">Комментарии</label>
+                      <textarea class="form-control" rows="5" id="comment">Ваш комментарий</textarea>
+                      <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="input-file">
+                                <input type="file" id="file-comment">
+                                <label for="file-comment"><i class="fa fa-paperclip" aria-hidden="true"></i>Перетащите файлы сюда или кликните чтобы загрузить
+                                </label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                       <ul class="list-group">
-                           <p><i class="fa fa-folder-o" aria-hidden="true"></i>Темы</p>
-                            <li>
-                                <a href="">Обзоры автомобилей</a>
-                            </li>
-                             <li>
-                                <a href="">Юридическая проверка(34)</a>
-                            </li>
-                             <li>
-                                <a href="">Выбор автоэксперта (3)</a>
-                            </li>
-                            <li>
-                                <a href="">Покупка и продажа</a>
-                            </li>
-                            <li>
-                                <a href="">Ремонт и комплектующие</a>
-                            </li>
-                    </ul>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p><i class="fa fa-folder-o" aria-hidden="true"></i>Темы</p>
+                                <ul class="list-group">
+                                    <li>
+                                        <a href="">Обзоры автомобилей</a>
+                                    </li>
+                                     <li>
+                                        <a href="">Юридическая проверка(34)</a>
+                                    </li>
+                                     <li>
+                                        <a href="">Выбор автоэксперта (3)</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Покупка и продажа</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ремонт и комплектующие</a>
+                                    </li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div id="vk_groups"></div>
                 </div>
             </div>
         </div>
@@ -232,5 +250,6 @@
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?151"></script>
 </body>
 </html>

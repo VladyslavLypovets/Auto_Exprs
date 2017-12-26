@@ -481,6 +481,8 @@ p
 
 .breadcrumb
     margin: 0px
+    padding: 8px 0
+    background: none
     li
         color: $water-blue
         font-size: 13px
@@ -494,23 +496,6 @@ p
         color: $black
         font-size: 13px
 
-.list-group
-        padding: 15px 40px
-        background-color: #fbfbfb
-        border-radius: 4px
-        border: 1px solid #e8e8e8
-        color: $water-blue
-        a
-            &:hover
-                font-weight: 600
-                text-decoration: none
-                i
-                    padding-right: 10px
-
-
-
-.breadcrumb
-        background: none
 /*===rating====*/
 .pagination
 	padding: 8px
@@ -597,7 +582,38 @@ a.decoration
 .margin-horizontal
 	margin: 0 16px
 
-
+.margin-vertical
+    margin: 16px 0
+    
+.form-group 
+    label
+        padding-left: 15px
+        font-weight: 600
+        font-size: 14px
+        
+        
+textarea.form-control
+    font-size: 13px
+    border-radius: 4px 4px 0px 0px
+    
+.panel .panel-body
+    padding: 0px
+    
+.panel.panel-default
+    border-radius: 0px
+ 
+.input-file
+    border-radius: 0px 0px 4px 4px
+    input
+        display: none
+    label
+        color: $color-muted
+        width: 100%
+        i
+            margin-right: 10px
+            color: $color-muted
+        
+        
 /*====Open Post Page Style End=====*/
 
 @import "media" // Всегда в конце
