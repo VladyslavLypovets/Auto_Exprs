@@ -53,6 +53,7 @@ label
 .btn
 	height: 40px
 	transition: all 0.3s
+	margin-bottom: 16px
 .btn-success
 	background: $mid-green
 	border-color: $mid-green
@@ -492,7 +493,7 @@ p
     a
         color: $black
         font-size: 13px
-        
+
 .list-group
         padding: 15px 40px
         background-color: #fbfbfb
@@ -506,33 +507,7 @@ p
                 i
                     padding-right: 10px
 
-        
-   
 
-// .container
-//     h6
-//         font-size: 13px
-//         color: $gray
-//         padding: 10px 0px
-//     span
-//         color: $gray
-//         font-size: 14px
-//         padding-right: 10px
-//
-//     i
-//         color: $gray
-//         font-size: 14px
-//         padding: 0px
-//     p
-//         font-size: 16px
-//         padding: 10px 0px
-//     img
-//         width: 287px
-//         height: 180px
-//         margin-right: 5px
-//     li
-//         color: $water-blue
-//         font-size: 13px
 
 .breadcrumb
         background: none
@@ -579,11 +554,19 @@ footer
 		font-size: 14px
 		color: $white
 		font-family: $semi-font
+
 	.list-style
 		a
 			color: unset
 			i.fa-circle
 					color: #535353
+
+.list-style
+	a
+		color: unset
+		i.fa-circle
+				color: #535353
+
 
 a.mobile_link
 	text-decoration: underline
@@ -597,6 +580,22 @@ a.mobile_link
 	i
 		color: #fff
 		font-size: 36px
+/*======Login====*/
+.btn-lg
+	width: 100%
+	padding: 0
+a
+	color: $black
+	font-size: 14px
+	font-family: $default-font
+	&:hover
+		color: $black
+a.decoration
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.margin-horizontal
+	margin: 0 16px
 
 
 /*====Open Post Page Style End=====*/
