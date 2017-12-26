@@ -41,7 +41,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.2
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
@@ -508,6 +508,20 @@ strong
         color: $black
         font-size: 13px
 
+.list-group
+	padding-left: 15px
+	margin-bottom: 0
+	a
+		&:hover
+			font-weight: 600
+			text-decoration: none
+
+
+
+
+.breadcrumb
+        background: none
+
 /*===rating====*/
 .pagination
 	padding: 8px
@@ -595,6 +609,30 @@ a.decoration
 .margin-horizontal
 	margin: 0 16px
 
+/*======Blog====*/
+h5
+	margin: 0
+	a
+		color: $black
+		font-size: 16px
+		font-weight: 600
+		&:hover
+			color: #1b98de
+.list-group
+	li
+		margin-bottom: 15px
+	li.active a
+		color: #1b98de
+.text-description
+	font-size: 13px
+.panel-default
+	i
+		padding-right: 4px
+	.fa-folder-o
+		padding-right: 16px
+	img
+		border: solid 1px #e8e8e8
+		float: right
 .margin-vertical
     margin: 16px 0
     
@@ -625,7 +663,6 @@ textarea.form-control
         i
             margin-right: 10px
             color: $color-muted
-        
         
 /*====Open Post Page Style End=====*/
 
