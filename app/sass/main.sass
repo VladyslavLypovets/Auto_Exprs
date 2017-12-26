@@ -254,7 +254,7 @@ h5
 	color: $black
 	font-family: $default-font
 p
-	margin: 0
+	margin: 16px 0
 	font-size: 14px
 	color: $black
 	font-family: $default-font
@@ -494,30 +494,20 @@ p
         color: $black
         font-size: 13px
 
-// .container
-//     h6
-//         font-size: 13px
-//         color: $gray
-//         padding: 10px 0px
-//     span
-//         color: $gray
-//         font-size: 14px
-//         padding-right: 10px
-//
-//     i
-//         color: $gray
-//         font-size: 14px
-//         padding: 0px
-//     p
-//         font-size: 16px
-//         padding: 10px 0px
-//     img
-//         width: 287px
-//         height: 180px
-//         margin-right: 5px
-//     li
-//         color: $water-blue
-//         font-size: 13px
+.list-group
+        padding: 15px 40px
+        background-color: #fbfbfb
+        border-radius: 4px
+        border: 1px solid #e8e8e8
+        color: $water-blue
+        a
+            &:hover
+                font-weight: 600
+                text-decoration: none
+                i
+                    padding-right: 10px
+
+
 
 .breadcrumb
         background: none
@@ -564,11 +554,19 @@ footer
 		font-size: 14px
 		color: $white
 		font-family: $semi-font
+
+	.list-style
+		a
+			color: unset
+			i.fa-circle
+					color: #535353
+
 .list-style
 	a
 		color: unset
 		i.fa-circle
 				color: #535353
+
 
 a.mobile_link
 	text-decoration: underline
