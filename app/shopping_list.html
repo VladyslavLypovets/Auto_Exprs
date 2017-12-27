@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Список покупок</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,6 @@
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
-
 <body>
 	<header>
 		<div class="top-line">
@@ -70,86 +69,102 @@
 		  </div>
 		</nav>
 	</header>
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h1 class="text-center">Вход на сайт</h1>
-          <form action="#">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <h5 class="text-center">Быстрый вход</h5>
-                <ul class="list-style list-inline text-center margin-vertical">
-      						<li>
-      							<a href="#">
-      								<span class="fa-stack fa-lg">
-      									<i class="fa fa-circle fa-stack-2x"></i>
-      									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-      								</span>
-      							</a>
-      						</li>
-      						<li>
-      							<a href="#">
-      								<span class="fa-stack fa-lg">
-      									<i class="fa fa-circle fa-stack-2x"></i>
-      									<i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-      								</span>
-      							</a>
-      						</li>
-      						<li>
-      							<a href="#">
-      								<span class="fa-stack fa-lg">
-      									<i class="fa fa-circle fa-stack-2x"></i>
-      									<i class="fa fa-odnoklassniki fa-stack-1x fa-inverse"></i>
-      								</span>
-      							</a>
-      						</li>
-      						<li>
-      							<a href="#">
-      								<span class="fa-stack fa-lg">
-      									<i class="fa fa-circle fa-stack-2x"></i>
-      									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-      								</span>
-      							</a>
-      						</li>
-      						<li>
-      							<a href="#">
-      								<span class="fa-stack fa-lg">
-      									<i class="fa fa-circle fa-stack-2x"></i>
-      									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-      								</span>
-      							</a>
-      						</li>
-      					</ul>
-                <div class="form-group margin-vertical">
-                  <div class="row">
-                     <div class="col-sm-12">
-                          <label for="login">Логин или Email</label>
-                          <input type="text" class="form-control " id="login" value="Введите логин или email">
-                     </div>
-                  </div>
+	<main>
+        <div class="container">
+            <h4>Покупки</h4>
+            <div class="row">
+                  <ul class="nav nav-tabs margin-vertical">
+                    <li class=""><a data-toggle="tab" href="#home" aria-expanded="false">Все(12)</a></li>
+                    <li class="active"><a data-toggle="tab" href="#menu1" aria-expanded="true">Актуальные(6)</a></li>
+                    <li class=""><a data-toggle="tab" href="#menu2" aria-expanded="false">Архив(6)</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade">
+
+                    </div>
+                    <div id="menu1" class="tab-pane fade active in">
+
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+
+                    </div>
                 </div>
-                <div class="form-group">
-                  <div class="row">
-                      <div class="col-sm-12">
-                          <label for="login">Пароль</label>
-                          <input type="text" class="form-control " id="login" value="Введите ваш пароль">
-                      </div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-success btn-lg">Вход</button>
-                <div class="text-center">
-                  <a href="#" class="margin-horizontal">Востановить пароль</a>
-                  <a href="#" class="decoration margin-horizontal">Регистрация</a></div>
-              </div>
             </div>
-          </form>
         </div>
-      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+               <ul class="list-inline margin-vertical">
+                  <li>
+                      <strong>Сортировать:</strong>
+                  </li>
+                  <li>
+                      <a href="#"  class="active">дате</a>
+                  </li>
+                </ul>
+           </div>
+           <div class="col-sm-6">
+            <div class="form-group pull-right">
+                <select class="selectpicker">
+                    <option>Показывать по 10</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                </select>
+            </div>
+           </div>
+          </div>
+        </div>
+        <div class="block-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <img src="img/blog_zimnie_shini.jpg" alt="zimnie_shini" class="img-responsive img-rounded">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <h5>BMW 3</h5>
+                                    <span>2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</span>
+                                    <p><strong>Стоимость авто:</strong><span>1 520 000 руб.</span></p>
+                                    <p><strong>Дата проверки:</strong><span>31.07.17</span></p>
+                                    <p><strong>Эксперт:</strong><span>Иванов Алексей Сергеевич</span></p>
+                                    <p><strong>Заключение:</strong><span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span></p>
+                                    <p><strong>Дата проверки:</strong><span>31.07.17</span></p>
+                                    <div>
+                                        <span class="text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Москва</span></span>
+                                        <span class="pull-right text-muted">17 июля 2017 г.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                   <button type="button" class="btn btn-default btn-lg">В архив</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <ul class="pagination">
+                            <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">32</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
     </div>
-  </main>
+	</main>
 	<footer>
-		<div class="container">
+	    <div class="container">
 			<div class="row">
 				<div class="col-md-3 text-center">
 					<a href="#"><img src="img/footer_logo.svg" alt="logo" class="img-responsive"></a>
@@ -250,6 +265,6 @@
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
-
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?151"></script>
 </body>
 </html>
