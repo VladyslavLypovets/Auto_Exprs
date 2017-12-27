@@ -644,26 +644,45 @@ h5
         
         
 textarea.form-control
-    font-size: 13px
-    border-radius: 4px 4px 0px 0px
+    resize: none
+    border-radius: 0px
     
 .panel .panel-body
     padding: 0px
     
-.panel.panel-default
-    border-radius: 0px
  
 .input-file
     border-radius: 0px 0px 4px 4px
+    background: $gray
     input
         display: none
     label
         color: $color-muted
         width: 100%
+        cursor: pointer
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p
+            color: $color-muted
         i
             margin-right: 10px
-            color: $color-muted
+            
+.comments   
+    border: 1px solid #e8e8e8
+    
+    padding: 8px
+    label
+        color: $water-blue
+    span
+        font-size: 11px
+        color: $color-muted
+        margin: 0px 15px
+    a
+        color: $color-muted
         
+    
+    
 /*====Open Post Page Style End=====*/
 
 @import "media" // Всегда в конце

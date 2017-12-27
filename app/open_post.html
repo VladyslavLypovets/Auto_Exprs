@@ -71,7 +71,6 @@
 	</header>
 	<main>
 	    <div class="container">
-	        <div class="row">
                 <ul class="breadcrumb">
                   <li>
                       <a href="#">Главная</a>
@@ -81,7 +80,6 @@
                   </li>
                   <li>Подержанные (Б/У) зимние шины.  Стоит ли покупать?</li>
                 </ul>
-	        </div>
         </div>
         <div class="container">
             <div class="row">
@@ -94,10 +92,10 @@
             </p>
                    <div class="row">
                         <div class="col-sm-6">
-                                <img src="img/shiny.jpg" class="img-responsive">
+                                <img src="img/shiny.jpg" class="img-responsive margin-vertical">
                         </div>
                         <div class="col-sm-6">
-                            <img src="img/shiny.jpg" class="img-responsive">
+                            <img src="img/shiny.jpg" class="img-responsive margin-vertical">
                         </div>
                     </div>
                     <p>
@@ -106,19 +104,39 @@
                         Решил поставить диски большего размера. А что такое тоже бывает, «катался» скажем на 14 диаметре, а сейчас решил поставить 15 на зиму, ну и литье прикупил, а старые скидываешь.<br>
                         ШИНОМОНТАЖ. Зачастую к ним приносят много резины и они их скупают (дешевле конечно), затем продают. Эдакие «перекупы» Резина из-за границы. Скажем Европа, Япония и т.д. Бывают от туда привозят много шин, но зимняя — как правило либо «ЕВРОЗИМА», либо липучка, их так же продают у нас.
                     </p>
-                    <div class="form-group">
-                      <label for="comment">Комментарии</label>
-                      <textarea class="form-control" rows="5" id="comment">Ваш комментарий</textarea>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
+                    <form action="#">
+                        <div class="form-group margin-vertical">
+                          <label>Комментарии</label>
+                          <textarea class="form-control" rows="5" id="comment">Ваш комментарий</textarea>
                             <div class="input-file">
                                 <input type="file" id="file-comment">
-                                <label for="file-comment"><i class="fa fa-paperclip" aria-hidden="true"></i>Перетащите файлы сюда или кликните чтобы загрузить
+                                <label for="file-comment"><p><i class="fa fa-paperclip" aria-hidden="true"></i>Перетащите файлы сюда или кликните чтобы загрузить</p><button type="submit" class="btn btn-primary pull-right">Отправить</button>
                                 </label>
                             </div>
                         </div>
-                      </div>
-                    </div>
+                   </form>
+                   <div class="comments">
+                       <label>Олег Миронов</label><span>01.05.2017 в 12:25</span><a 
+                       href="#">Ответить</a>
+                       <p>Отличная статья.</p>
+                   </div>
+                    <div class="comments">
+                       <div class="margin-horizontal">
+                           <label>Артур Иванов</label><span>01.05.2017 в 12:25</span><a 
+                       href="#">Ответить</a>
+                       <p>Бывает, что машину продаешь, а резина остается.</p>
+                       </div>
+                   </div>
+                    <form action="#">
+                        <div class="form-group">
+                          <textarea class="form-control" rows="5" id="comment">Ваш ответ</textarea>
+                            <div class="input-file">
+                                <input type="file" id="file-comment">
+                                <label for="file-comment"><p><i class="fa fa-paperclip" aria-hidden="true"></i>Перетащите файлы сюда или кликните чтобы загрузить</p><button type="submit" class="btn btn-primary pull-right">Отправить</button>
+                                </label>
+                            </div>
+                        </div>
+                   </form>
                 </div>
                 <div class="col-sm-4">
                         <div class="panel panel-default">
