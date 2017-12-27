@@ -46,14 +46,10 @@ body
   font-family: $default-font
   overflow-x: hidden
   opacity: 1
-//icons_colors
-.icon-icon-accept
-  color: $mid-green
 /*=======Components-style=========*/
 label
   font-family: $semi-font
-.no-margin-bottom
-  margin-bottom: 0
+
 .container
   width: 958px
 
@@ -307,7 +303,6 @@ p
   .container
     .navbar-brand
       padding: 0
-      height: auto
       margin-right: 100px
       margin-left: 0
   li
@@ -338,8 +333,6 @@ p
         padding: 8px 27px
         border: 1px solid $gray
 /*=====Main style=====*/
-main
-  min-height: 400px
 .info-block
   background-image: linear-gradient(to top, #33abd0, #4091bf)
   h1
@@ -451,7 +444,6 @@ strong
   img
     border: 2px solid $gray
     border-radius: 4px
-    width: 100%
   a
     display: block
     position: relative
@@ -486,7 +478,7 @@ strong
 
 .label
   padding: 0 8px
-  line-height: 2
+  line-height: 21px
   border-radius: 100px
   font-weight: unset
   font-family: $default-font
@@ -626,6 +618,7 @@ footer
   a
     color: $white
     font-size: 12px
+    font-family: $black
     margin-bottom: 16px
     display: block
     transition: all 0.3s
@@ -697,6 +690,7 @@ a
       font-weight: 600
       &:hover
         color: #1b98de
+        text-decoration: underline
 .list-group
   li
     margin-bottom: 15px
@@ -707,8 +701,6 @@ a
 .text-description
   font-size: 13px
 .panel-default
-  h5
-    margin: 0
   i
     padding-right: 4px
   .fa-folder-o
@@ -760,6 +752,50 @@ textarea
   a
     color: $color-muted
 
+/*======Карточка автоэксперта/Услуги====*/
+.btn-back
+  width: 144px
+  height: 30px
+  font-size: 13px
+  margin-bottom: 8px
+
+.labels-wrap
+  span
+    font-size: 14px
+.caption
+  h4
+    .fa-get-pocket
+      color: #4caf50
+      font-size: 21px
+.text-muted
+  .fa-map-marker
+    font-size: 21px
+    margin-right: 4px
+
+.btn-skills
+    padding: 0px 8px
+    -webkit-border-radius: 100px
+    border-radius: 100px
+    background-color: rgba(195,211,239,.25)
+    width: auto
+    border: solid 1px rgba(76,101,146,.3)
+    font-size: 13px
+    height: 24px
+    margin: 0 4px
+
+.thumbnail
+  .fa-phone-square, .fa-usd, .fa-at
+    font-size: 16px
+    font-weight: 700
+.list-group.list-unstyled
+  padding-left: 0
+.list-group
+  p
+    i
+      font-size: 15px
+      margin-right: 8px
+.text-small
+  font-size: 11px
 /*====Open Post Page Style End=====*/
 
 @import "media"
