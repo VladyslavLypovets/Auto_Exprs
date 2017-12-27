@@ -436,7 +436,6 @@ strong
 		padding: 9px 0
 		.expert_name
 			color: $black
-			margin-bottom: 15px
 			font-family: $semi-font
 			i
 				color: $mid-green
@@ -454,6 +453,7 @@ strong
 .label-warning
 	background-color: #eca700
 .labels-wrap
+	margin-top: 15px
 	display: flex
 	justify-content: space-between
 .text-muted
@@ -486,7 +486,31 @@ strong
 			line-height: 18px
 			color: $black
 			font-family: $semi-font
-
+.car-img_name-overllay
+	  width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    padding: 0 0 8px 8px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+	label
+		color: $white
+		font-size: 15px
+		font-family: $semi-font
+		margin-bottom: 0
+	p
+		color: $white
+		font-size: 14px
+		font-family: $semi-font
+		margin-bottom: 0
+.caption
+	.text-description
+		i
+			margin-right: 4px
 
 
 /*====Open Post Page Style Start=====*/
@@ -610,12 +634,16 @@ a.decoration
 	margin: 0 16px
 
 /*======Blog====*/
-a
-	color: $black
-	font-size: 16px
-	font-weight: 600
-	&:hover
-		color: #1b98de
+
+.panel-default
+	h5
+		margin: 0
+		a
+			color: $black
+			font-size: 16px
+			font-weight: 600
+			&:hover
+				color: #1b98de
 .list-group
 	li
 		margin-bottom: 15px
@@ -636,18 +664,20 @@ a
 
 .margin-vertical
     margin: 16px 0
-    
-.form-group 
+
+.form-group
     label
         padding-left: 15px
         font-weight: 600
         font-size: 14px
-        
-        
+
+
 textarea.form-control
+
+    font-size: 13px
+    border-radius: 4px 4px 0px 0px
     resize: none
     border-radius: 0px
-    
 
 .input-file
     border-radius: 0px 0px 4px 4px
@@ -665,7 +695,7 @@ textarea.form-control
             color: $color-muted
         i
             margin-right: 10px
-            
+            color: $color-muted
 .comments   
     border: 1px solid #e8e8e8
     
