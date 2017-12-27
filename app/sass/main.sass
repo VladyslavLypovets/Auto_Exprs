@@ -46,10 +46,14 @@ body
   font-family: $default-font
   overflow-x: hidden
   opacity: 1
+//icons_colors
+.icon-icon-accept
+  color: $mid-green
 /*=======Components-style=========*/
 label
   font-family: $semi-font
-
+.no-margin-bottom
+  margin-bottom: 0
 .container
   width: 958px
 
@@ -303,6 +307,7 @@ p
   .container
     .navbar-brand
       padding: 0
+      height: auto
       margin-right: 100px
       margin-left: 0
   li
@@ -333,6 +338,8 @@ p
         padding: 8px 27px
         border: 1px solid $gray
 /*=====Main style=====*/
+main
+  min-height: 400px
 .info-block
   background-image: linear-gradient(to top, #33abd0, #4091bf)
   h1
@@ -444,6 +451,7 @@ strong
   img
     border: 2px solid $gray
     border-radius: 4px
+    width: 100%
   a
     display: block
     position: relative
@@ -478,7 +486,7 @@ strong
 
 .label
   padding: 0 8px
-  line-height: 21px
+  line-height: 2
   border-radius: 100px
   font-weight: unset
   font-family: $default-font
@@ -651,7 +659,6 @@ footer
   a
     color: $white
     font-size: 12px
-    font-family: $black
     margin-bottom: 16px
     display: block
     transition: all 0.3s
