@@ -3,713 +3,757 @@
 @import "vars"
 
 *
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
-		box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 
 *::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *:-moz-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *::-moz-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+  color: #666
+
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+  color: #666
 
 html, body
-	height: 100%
+  height: 100%
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.2
-	font-family: $default-font
-	overflow-x: hidden
-	opacity: 1
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.2
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
 /*=======Components-style=========*/
 label
-	font-family: $semi-font
-.container
-	width: 958px
-.btn
-	height: 40px
-	transition: all 0.3s
-.btn-success
-	background: $mid-green
-	border-color: $mid-green
-	color: $white
-	&:hover, &:focus, &:active
-		background: $btn-success_hover
-		border-color: $btn-success_hover
-		color: $white
-.btn-primary
-	background: $water-blue
-	border-color: $water-blue
-	color: $white
-	&:hover, &:focus, &:active
-		background: $btn-primary_hover
-		border-color: $btn-primary_hover
-		color: $white
-.btn-warning
-	background: $sun-yellow
-	border-color: $sun-yellow
-	color: $black
-	&:hover, &:focus, &:active
-		background: $btn-warning_hover
-		border-color: $btn-warning_hover
-		color: $black
-.btn-default
-	background-color: $white
-	border: 1px solid $gray
-	color: $black
-	&:hover, &:focus, &:active
-		background-color: $gray
-		box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08)
-		color: $black
-.btn-info
-	background: $white
-	border-color: $water-blue
-	color: $water-blue
-	&:hover, &:focus, &:active
-		background: $water-blue
-		border-color: 1px solid $water-blue
-		color: $white
-.btn-danger
-	background: $btn-danger
-	box-shadow: 0 1px 3px 0 #c87233, inset 0 1px 0 0 rgba(255, 255, 255, 0.25)
-	border: none
-	color: $white
-	&:hover, &:focus, &:active
-		background-color: $btn-danger_focus
-		border: none
-		color: $white
-.form-control
-	height: 40px
-	border: 1px solid $gray
-	&:focus
-		border: 1px solid $gray
-		box-shadow: none
-		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08)
-.has-success
-	.form-control
-		border: 1px solid $mid-green
-.has-error
-	.form-control
-		border: 1px solid $red
-.form-group
-	select
-		border: 1px solid $gray
-		box-shadow: none
-		&:focus
-			box-shadow: none
-.nav-tabs
-	border: none
-	li.active
-		&:after
-			position: absolute
-			bottom: 0
-			content: " "
-			width: 100%
-			height: 4px
-			background: $water-blue
-		a
-			background: none
-			border: none
-			color: $water-blue
-			&:hover
-				background: none
-				border: none
-				color: $water-blue
-			&:focus
-				background: none
-				border: none
-				color: $water-blue
-	li
-		a
+  font-family: $semi-font
 
-			color: $black
-			font-family: $semi-font
-			border: none
-			&:hover
-				color: $water-blue
-				background: none
-				border: none
+.container
+  width: 958px
+
+.btn
+  height: 40px
+  transition: all 0.3s
+
+.btn-success
+  background: $mid-green
+  border-color: $mid-green
+  color: $white
+  &:hover, &:focus, &:active
+    background: $btn-success_hover
+    border-color: $btn-success_hover
+    color: $white
+
+.btn-primary
+  background: $water-blue
+  border-color: $water-blue
+  color: $white
+  &:hover, &:focus, &:active
+    background: $btn-primary_hover
+    border-color: $btn-primary_hover
+    color: $white
+
+.btn-warning
+  background: $sun-yellow
+  border-color: $sun-yellow
+  color: $black
+  &:hover, &:focus, &:active
+    background: $btn-warning_hover
+    border-color: $btn-warning_hover
+    color: $black
+
+.btn-default
+  background-color: $white
+  border: 1px solid $gray
+  color: $black
+  &:hover, &:focus, &:active
+    background-color: $gray
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08)
+    color: $black
+
+.btn-info
+  background: $white
+  border-color: $water-blue
+  color: $water-blue
+  &:hover, &:focus, &:active
+    background: $water-blue
+    border-color: 1px solid $water-blue
+    color: $white
+
+.btn-danger
+  background: $btn-danger
+  box-shadow: 0 1px 3px 0 #c87233, inset 0 1px 0 0 rgba(255, 255, 255, 0.25)
+  border: none
+  color: $white
+  &:hover, &:focus, &:active
+    background-color: $btn-danger_focus
+    border: none
+    color: $white
+
+.form-control
+  height: 40px
+  border: 1px solid $gray
+  &:focus
+    border: 1px solid $gray
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08)
+
+.has-success
+  .form-control
+    border: 1px solid $mid-green
+
+.has-error
+  .form-control
+    border: 1px solid $red
+
+.form-group
+  select
+    border: 1px solid $gray
+    box-shadow: none
+    &:focus
+      box-shadow: none
+
+.nav-tabs
+  border: none
+  li.active
+    &:after
+      content: " "
+      position: absolute
+      bottom: 0
+      width: 100%
+      height: 4px
+      background: $water-blue
+    a
+      background: none
+      border: none
+      color: $water-blue
+      &:hover
+        background: none
+        border: none
+        color: $water-blue
+      &:focus
+        background: none
+        border: none
+        color: $water-blue
+  li
+    a
+
+      color: $black
+      font-family: $semi-font
+      border: none
+      &:hover
+        color: $water-blue
+        background: none
+        border: none
+
 .panel
-	box-shadow: none
-	border: 1px solid $gray
-	.panel-body
-		padding: 16px
-		background-color: $panel-body_bg
-		border-radius: 4px
+  box-shadow: none
+  border: 1px solid $gray
+  .panel-body
+    padding: 16px
+    background-color: $panel-body_bg
+    border-radius: 4px
+
 .badges-wrap
-	a
-		color: $black
-		font-family: $default-font
-		font-size: 13px
-		.badge
-			padding: 0
-			vertical-align: unset
-			background: none
-			color: $black
-			font-family: $default-font
-			font-weight: unset
-			font-size: unset
-			&::before
-				content: "("
-			&::after
-				content: ")"
-		&:hover
-			color: $water-blue
-			text-decoration: none
-			.badge
-				color: $water-blue
-	a.active
-		color: $water-blue
-		font-family: $semi-font
-		.badge
-			color: $water-blue
-			font-family: $semi-font
+  a
+    color: $black
+    font-family: $default-font
+    font-size: 13px
+    .badge
+      padding: 0
+      vertical-align: unset
+      background: none
+      color: $black
+      font-family: $default-font
+      font-weight: unset
+      font-size: unset
+      &::before
+        content: "("
+      &::after
+        content: ")"
+    &:hover
+      color: $water-blue
+      text-decoration: none
+      .badge
+        color: $water-blue
+  a.active
+    color: $water-blue
+    font-family: $semi-font
+    .badge
+      color: $water-blue
+      font-family: $semi-font
+
 .panel-default
-	.panel-heading
-		color: $black
-		font-size: 18px
-		font-family: $semi-font
-		background-color: $gray
-		border: none
+  .panel-heading
+    color: $black
+    font-size: 18px
+    font-family: $semi-font
+    background-color: $gray
+    border: none
+
 .panel-info
-	border-color: $water-blue
-	.panel-heading
-		color: $white
-		font-size: 18px
-		font-family: $semi-font
-		background-color: $water-blue
-		border: none
+  border-color: $water-blue
+  .panel-heading
+    color: $white
+    font-size: 18px
+    font-family: $semi-font
+    background-color: $water-blue
+    border: none
+
 .panel-danger
-	border-color: $panel-danger_color
-	.panel-heading
-		color: $white
-		font-size: 18px
-		font-family: $semi-font
-		background-color: $panel-danger_color
-		border: none
+  border-color: $panel-danger_color
+  .panel-heading
+    color: $white
+    font-size: 18px
+    font-family: $semi-font
+    background-color: $panel-danger_color
+    border: none
+
 .panel-success
-	border-color: $panel-success
-	.panel-heading
-		color: $white
-		font-size: 18px
-		font-family: $semi-font
-		background-color: $panel-success
-		border: none
+  border-color: $panel-success
+  .panel-heading
+    color: $white
+    font-size: 18px
+    font-family: $semi-font
+    background-color: $panel-success
+    border: none
+
 .panel-warning
-	border-color: $orange
-	.panel-heading
-		color: $white
-		font-size: 18px
-		font-family: $semi-font
-		background-color: $orange
-		border: none
+  border-color: $orange
+  .panel-heading
+    color: $white
+    font-size: 18px
+    font-family: $semi-font
+    background-color: $orange
+    border: none
+
 h1
-	margin: 16px 0
-	font-size: 36px
-	color: $black
-	font-family: $bold-font
+  margin: 16px 0
+  font-size: 36px
+  color: $black
+  font-family: $bold-font
+
 h2
-	margin: 16px 0
-	font-size: 32px
-	color: $black
-	font-family: $semi-font
+  margin: 16px 0
+  font-size: 32px
+  color: $black
+  font-family: $semi-font
+
 h3
-	margin: 16px 0
-	font-size: 24px
-	color: $black
-	font-family: $semi-font
+  margin: 16px 0
+  font-size: 24px
+  color: $black
+  font-family: $semi-font
+
 h4
-	margin: 16px 0
-	font-size: 22px
-	color: $black
-	font-family: $semi-font
+  margin: 16px 0
+  font-size: 22px
+  color: $black
+  font-family: $semi-font
+
 h5
-	margin: 16px 0
-	font-size: 22px
-	color: $black
-	font-family: $default-font
+  margin: 16px 0
+  font-size: 22px
+  color: $black
+  font-family: $default-font
+
 p
-	margin: 0
-	font-size: 14px
-	color: $black
-	font-family: $default-font
+  margin: 0
+  font-size: 14px
+  color: $black
+  font-family: $default-font
 /*============main style=========*/
 /*====header style=====*/
 .top-line
-	background-color: $black
-	p
-		color: $white
-		padding: 8px 0
-		display: inline-block
-	.text-right
-		p
-			padding: 8px
-			background-color: #34373c
+  background-color: $black
+  p
+    color: $white
+    padding: 8px 0
+    display: inline-block
+  .text-right
+    p
+      padding: 8px
+      background-color: #34373c
+
 .navbar
-	padding: 23px 0
-	margin: 0
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08)
-	.container
-		.navbar-brand
-			padding:  0
-			margin-right: 100px
-			margin-left: 0
-	li
-		&:not(:first-child)
-			margin-left: 16px
-		a
-			display: inline-block
-			&:first-child
-				padding: 8px
-				color: $black_text-color
-				font-family: $semi-font
-				font-size: 17px
-				border-radius: 4px
-				transition: all 0.3s
-				&:hover
-					background-color: $water-blue
-					color: $white
-			&:not(:first-child)
-				padding: 0
-				color: $grey_text-color
-				&:hover
-					background: none
+  padding: 23px 0
+  margin: 0
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08)
+  .container
+    .navbar-brand
+      padding: 0
+      margin-right: 100px
+      margin-left: 0
+  li
+    &:not(:first-child)
+      margin-left: 16px
+    a
+      display: inline-block
+      &:first-child
+        padding: 8px
+        color: $black_text-color
+        font-family: $semi-font
+        font-size: 17px
+        border-radius: 4px
+        transition: all 0.3s
+        &:hover
+          background-color: $water-blue
+          color: $white
+      &:not(:first-child)
+        padding: 0
+        color: $grey_text-color
+        &:hover
+          background: none
+
 .navbar-nav.navbar-right
-	li
-		a
-			&:first-child
-				padding: 8px 27px
-				border: 1px solid $gray
+  li
+    a
+      &:first-child
+        padding: 8px 27px
+        border: 1px solid $gray
 /*=====Main style=====*/
 .info-block
-	background-image: linear-gradient(to top, #33abd0, #4091bf)
-	h1
-		color: $white
+  background-image: linear-gradient(to top, #33abd0, #4091bf)
+  h1
+    color: $white
+
 .search_expert
-	margin-right: -15px
-	padding: 15px 0
-	display: flex
-	align-items: center
-	justify-content: center
-	color: $black
-	background: $white
-	font-family: $semi-font
-	border-top-left-radius: 4px
-	border-bottom-left-radius: 4px
-	transition: all 0.3s
-	margin-bottom: 16px
-	margin-top: 20px
-	i
-		margin-right: 5px
-	&:hover
-		color: $white
-		background-color: rgba(255, 255, 255, 0.3)
-		text-decoration: none
+  margin-right: -15px
+  padding: 15px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $black
+  background: $white
+  font-family: $semi-font
+  border-top-left-radius: 4px
+  border-bottom-left-radius: 4px
+  transition: all 0.3s
+  margin-bottom: 16px
+  margin-top: 20px
+  i
+    margin-right: 5px
+  &:hover
+    color: $white
+    background-color: rgba(255, 255, 255, 0.3)
+    text-decoration: none
+
 .auto_reliable
-	margin-left: -15px
-	padding: 15px 0
-	display: flex
-	align-items: center
-	justify-content: center
-	color: $white
-	background-color: rgba(255, 255, 255, 0.3)
-	font-family: $semi-font
-	border-top-right-radius: 4px
-	border-bottom-right-radius: 4px
-	transition: all 0.3s
-	margin-bottom	: 32px
-	margin-top: 20px
-	i
-		margin-right: 5px
-	&:hover
-		color: $black
-		background: $white
-		text-decoration: none
+  margin-left: -15px
+  padding: 15px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $white
+  background-color: rgba(255, 255, 255, 0.3)
+  font-family: $semi-font
+  border-top-right-radius: 4px
+  border-bottom-right-radius: 4px
+  transition: all 0.3s
+  margin-bottom: 32px
+  margin-top: 20px
+  i
+    margin-right: 5px
+  &:hover
+    color: $black
+    background: $white
+    text-decoration: none
+
 .info-block
-	label
-		color: $white
-		font-size: 13px
-		font-family: $semi-font
-		span
-			font-family: $default-font
-	.price-filter-wrap
-		display: flex
-		justify-content: center
-		align-items: center
-		span
-			width: 9px
-			height: 1px
-			background: $white
-			margin: 0 8px
-		.form-control
-			text-align: center
-	.text-center
-		a
-			font-size: 14px
-			color: $white
-			text-decoration: underline
-			font-family: $default-font
-		button
-			margin: 16px 0 65px
-			width: 192px
-		i
-			color: $white
-	h3
-		color: $white
-	p
-		color: $white
-		font-size: 16px
-		margin-bottom: 16px
+  label
+    color: $white
+    font-size: 13px
+    font-family: $semi-font
+    span
+      font-family: $default-font
+  .price-filter-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    span
+      width: 9px
+      height: 1px
+      background: $white
+      margin: 0 8px
+    .form-control
+      text-align: center
+  .text-center
+    a
+      font-size: 14px
+      color: $white
+      text-decoration: underline
+      font-family: $default-font
+    button
+      margin: 16px 0 65px
+      width: 192px
+    i
+      color: $white
+  h3
+    color: $white
+  p
+    color: $white
+    font-size: 16px
+    margin-bottom: 16px
+
 strong
-	font-family: $semi-font
+  font-family: $semi-font
+
 .block-wrap
-	padding: 48px 0
+  padding: 48px 0
+
 .sub-title
-	position: relative
-	padding-bottom: 16px
-	&:after
-		position: absolute
-		bottom: 0
-		left: 50%
-		transform: translateX(-50%)
-		content: " "
-		display: block
-		width: 104px
-		height: 2px
-		background: $water-blue
+  position: relative
+  padding-bottom: 16px
+  &:after
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    content: " "
+    display: block
+    width: 104px
+    height: 2px
+    background: $water-blue
+
 .thumbnail
-	padding: 0
-	margin: 16px 0
-	border: none
-	border-radius: 0
-	img
-		border: 2px solid $gray
-		border-radius: 4px
-	a
-		display: block
-		position: relative
-		.expert-img_overllay
-			position: absolute
-			top: 0
-			height: 100%
-			width: 100%
-			display: flex
-			justify-content: center
-			flex-direction: column
-			padding: 0 32px
-			background-color: rgba(83, 83, 83, 0.6)
-			opacity: 0
-			transition: all 0.3s
-			button
-				margin-bottom: 8px
-				height: 30px
-				font-family: $semi-font
-				line-height: 1
-		&:hover
-			.expert-img_overllay
-				opacity: 1
-	.caption
-		padding: 9px 0
-		.expert_name
-			color: $black
-			font-family: $semi-font
-			i
-				color: $mid-green
-				margin-left: 13px
+  padding: 0
+  margin: 16px 0
+  border: none
+  border-radius: 0
+  img
+    border: 2px solid $gray
+    border-radius: 4px
+  a
+    display: block
+    position: relative
+    .expert-img_overllay
+      position: absolute
+      top: 0
+      height: 100%
+      width: 100%
+      display: flex
+      justify-content: center
+      flex-direction: column
+      padding: 0 32px
+      background-color: rgba(83, 83, 83, 0.6)
+      opacity: 0
+      transition: all 0.3s
+      button
+        margin-bottom: 8px
+        height: 30px
+        font-family: $semi-font
+        line-height: 1
+    &:hover
+      .expert-img_overllay
+        opacity: 1
+  .caption
+    padding: 9px 0
+    .expert_name
+      color: $black
+      font-family: $semi-font
+      i
+        color: $mid-green
+        margin-left: 13px
+
 .label
-	padding: 0 8px
-	line-height: 21px
-	border-radius: 100px
-	font-weight: unset
-	font-family: $default-font
+  padding: 0 8px
+  line-height: 21px
+  border-radius: 100px
+  font-weight: unset
+  font-family: $default-font
+
 .label-success
-	background-color: $mid-green
+  background-color: $mid-green
+
 .label-danger
-	background-color: $red
+  background-color: $red
+
 .label-warning
-	background-color: #eca700
+  background-color: #eca700
+
 .labels-wrap
-	margin-top: 15px
-	display: flex
-	justify-content: space-between
+  margin-top: 15px
+  display: flex
+  justify-content: space-between
+
 .text-muted
-	color: $color-muted
+  color: $color-muted
+
 .show_more
-	width: 100%
-	font-size: 16px
-	color: $black
-	font-family: $semi-font
+  width: 100%
+  font-size: 16px
+  color: $black
+  font-family: $semi-font
+
 .bg-grey
-	background-color: #fbfbfb
+  background-color: #fbfbfb
 
 .list-style-img
-	margin-top: 37px
-	list-style: none
-	li
-		position: relative
-		margin-bottom: 25px
-		&::before
-			position: absolute
-			top: 0
-			left: -40px
-			content: ' '
-			background: url(../img/Icon-check.svg.svg)
-			width: 24px
-			height: 24px
-		h6
-			margin: 0 0 4px 0
-			font-size: 18px
-			line-height: 18px
-			color: $black
-			font-family: $semi-font
-.car-img_name-overllay
-	width: 100%
-	height: 100%
-	position: absolute
-	top: 0
-	left: 0
-	z-index: 1
-	padding: 0 0 8px 8px
-	display: flex
-	flex-direction: column
-	justify-content: flex-end
-	label
-		color: $white
-		font-size: 15px
-		font-family: $semi-font
-		margin-bottom: 0
-	p
-		color: $white
-		font-size: 14px
-		font-family: $semi-font
-		margin-bottom: 0
-.caption
-	.text-description
-		i
-			margin-right: 4px
+  margin-top: 37px
+  list-style: none
+  li
+    position: relative
+    margin-bottom: 25px
+    &::before
+      position: absolute
+      top: 0
+      left: -40px
+      content: ' '
+      background: url(../img/Icon-check.svg.svg)
+      width: 24px
+      height: 24px
+    h6
+      margin: 0 0 4px 0
+      font-size: 18px
+      line-height: 18px
+      color: $black
+      font-family: $semi-font
 
+.car-img_name-overllay
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  padding: 0 0 8px 8px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  label
+    color: $white
+    font-size: 15px
+    font-family: $semi-font
+    margin-bottom: 0
+  p
+    color: $white
+    font-size: 14px
+    font-family: $semi-font
+    margin-bottom: 0
+
+.caption
+  .text-description
+    i
+      margin-right: 4px
 
 /*====Open Post Page Style Start=====*/
 
 .breadcrumb
-    margin: 0px
-    padding: 8px 0
-    background: none
-    li
-        color: $water-blue
-        font-size: 13px
-    li+li
-        &:before
-            content: '\f105'
-            font-family: $font-awesome
-            color: $black
-            padding: 0px 15px
-    a
+  margin: 0px
+  padding: 8px 0
+  background: none
+  li
+    color: $water-blue
+    font-size: 13px
+  li
+    &+ li
+      &:before
+        content: '\f105'
+        font-family: $font-awesome
         color: $black
-        font-size: 13px
+        padding: 0px 15px
+  a
+    color: $black
+    font-size: 13px
 
 .list-group
-	padding-left: 15px
-	margin-bottom: 0
-	a
-		&:hover
-			font-weight: 600
-			text-decoration: none
-
-
-
+  padding-left: 15px
+  margin-bottom: 0
+  a
+    &:hover
+      font-weight: 600
+      text-decoration: none
 
 .breadcrumb
-        background: none
+  background: none
 
 /*===rating====*/
 .pagination
-	padding: 8px
-	border: 1px solid #e0e0e0
-	border-radius: 4px
-	li
-		a
-			padding: 3px 9px
-			border: none
-			font-size: 14px
-			color: #535353
-			font-family: $semi-font
-			border-radius: 4px
-			i
-				color: #bdbdbd
+  padding: 8px
+  border: 1px solid #e0e0e0
+  border-radius: 4px
+  li
+    a
+      padding: 3px 9px
+      border: none
+      font-size: 14px
+      color: #535353
+      font-family: $semi-font
+      border-radius: 4px
+      i
+        color: #bdbdbd
 /*====footer===*/
 footer
-	margin-top: 48px
-	padding-top: 32px
-	padding-bottom: 20px
-	background: $black
-	.row
-		margin-top: 16px
-	p
-		font-size: 14px
-		font-family: $default-font
-		color: $color-muted
-	a
-		color: $white
-		font-size: 12px
-		font-family: $black
-		margin-bottom: 16px
-		display: block
-		transition: all 0.3s
-		&:hover
-			color: $white
-		img
-			margin: 0 auto
-	h5
-		margin-top: 0
-		font-size: 14px
-		color: $white
-		font-family: $semi-font
+  margin-top: 48px
+  padding-top: 32px
+  padding-bottom: 20px
+  background: $black
+  .row
+    margin-top: 16px
+  p
+    font-size: 14px
+    font-family: $default-font
+    color: $color-muted
+  a
+    color: $white
+    font-size: 12px
+    font-family: $black
+    margin-bottom: 16px
+    display: block
+    transition: all 0.3s
+    &:hover
+      color: $white
+    img
+      margin: 0 auto
+  h5
+    margin-top: 0
+    font-size: 14px
+    color: $white
+    font-family: $semi-font
 
-	.list-style
-		a
-			color: unset
-			i.fa-circle
-					color: #535353
+  .list-style
+    a
+      color: unset
+      i
+        &.fa-circle
+          color: #535353
 
 .list-style
-	a
-		color: unset
-		i.fa-circle
-				color: #535353
+  a
+    color: unset
+    i
+      &.fa-circle
+        color: #535353
 
+a
+  &.mobile_link
+    text-decoration: underline
+    font-size: 14px
+  &:hover
+    text-decoration: none
 
-a.mobile_link
-	text-decoration: underline
-	font-size: 14px
-	&:hover
-		text-decoration: none
 .pay
-	margin-bottom: 0
-	a
-		margin-bottom: 0
-	i
-		color: #fff
-		font-size: 36px
+  margin-bottom: 0
+  a
+    margin-bottom: 0
+  i
+    color: #fff
+    font-size: 36px
 /*======Login====*/
 .btn-lg
-	width: 100%
-	padding: 0
-	margin-bottom: 16px
+  width: 100%
+  padding: 0
+  margin-bottom: 16px
+
 a
-	color: $black
-	font-size: 14px
-	font-family: $default-font
-	&:hover
-		color: $black
-a.decoration
-	text-decoration: underline
-	&:hover
-		text-decoration: none
+  color: $black
+  font-size: 14px
+  font-family: $default-font
+  &:hover
+    color: $black
+
+a
+  &.decoration
+    text-decoration: underline
+  &:hover
+    text-decoration: none
 .margin-horizontal
-	margin: 0 16px
-
+  margin: 0 16px
 /*======Blog====*/
-
 .panel-default
-	h5
-		margin: 0
-		a
-			color: $black
-			font-size: 16px
-			font-weight: 600
-			&:hover
-				color: #1b98de
+  h5
+    margin: 0
+    a
+      color: $black
+      font-size: 16px
+      font-weight: 600
+      &:hover
+        color: #1b98de
 .list-group
-	li
-		margin-bottom: 15px
-	li.active a
-		color: #1b98de
+  li
+    margin-bottom: 15px
+  li
+    &.active
+      a
+        color: #1b98de
 .text-description
-	font-size: 13px
+  font-size: 13px
 .panel-default
-	h5
-		margin: 0
-	i
-		padding-right: 4px
-	.fa-folder-o
-		padding-right: 16px
-	.img-rounded
-		border: solid 1px #e8e8e8
-		float: right
-
+  h5
+    margin: 0
+  i
+    padding-right: 4px
+  .fa-folder-o
+    padding-right: 16px
+  .img-rounded
+    border: solid 1px #e8e8e8
+    float: right
 .margin-vertical
-    margin: 16px 0
-
+  margin: 16px 0
 .form-group
-    label
-        font-weight: 600
-        font-size: 14px
-
-
-textarea.form-control
-
+  label
+    font-weight: 600
+    font-size: 14px
+textarea
+  &.form-control
     font-size: 13px
-    border-radius: 4px 4px 0px 0px
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
     resize: none
-    border-radius: 0px
 
 .input-file
-    border-radius: 0px 0px 4px 4px
-    background: $gray
-    input
-        display: none
-    label
-        color: $color-muted
-        width: 100%
-        cursor: pointer
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        p
-            color: $color-muted
-        i
-            margin-right: 10px
-            color: $color-muted
-.comments   
-    border: 1px solid #e8e8e8
-    
-    padding: 8px
-    label
-        color: $water-blue
-    span
-        font-size: 11px
-        color: $color-muted
-        margin: 0px 15px
-    a
-        color: $color-muted
-        
-    
-    
+  border-bottom-left-radius: 4px
+  border-bottom-right-radius: 4px
+  background: $gray
+  input
+    display: none
+  label
+    color: $color-muted
+    width: 100%
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    p
+      color: $color-muted
+    i
+      margin-right: 10px
+      color: $color-muted
+
+.comments
+  border: 1px solid #e8e8e8
+  padding: 8px
+  label
+    color: $water-blue
+  span
+    font-size: 11px
+    color: $color-muted
+    margin: 0 15px
+  a
+    color: $color-muted
+
 /*====Open Post Page Style End=====*/
 
-@import "media" // Всегда в конце
+@import "media"
+// Всегда в конце
