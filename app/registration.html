@@ -73,13 +73,21 @@
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h1 class="text-center">Вход на сайт</h1>
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="text-center">Регистрация</h1>
+             <div class="row">
+                  <div class="col-sm-6">
+                      <button type="button" class="btn btn-default btn-lg">Я заказчик</button> 
+                  </div>
+                 <div class="col-sm-6">
+                     <button type="button" class="btn btn-default pull-right btn-lg ">Я автоэксперт</button>
+                 </div>
+             </div>
           <form action="#">
             <div class="panel panel-default">
               <div class="panel-body">
-                <h5 class="text-center">Быстрый вход</h5>
-                <ul class="list-style list-inline text-center margin-vertical">
+               <h5 class="text-center">Быстрая регистрация</h5>
+                <ul class="list-style list-inline text-center  margin-vertical">
       						<li>
       							<a href="#">
       								<span class="fa-stack fa-lg">
@@ -121,26 +129,44 @@
       							</a>
       						</li>
       					</ul>
+                <h5 class="text-center">Регистрируйся через почту</h5>
                 <div class="form-group margin-vertical">
                   <div class="row">
-                     <div class="col-sm-12">
-                          <label for="login">Логин или Email</label>
-                          <input type="text" class="form-control " id="login" value="Введите логин или email">
-                     </div>
+                    <div class="col-sm-8 col-md-offset-2">
+                      <label for="login">Логин или Email</label>
+                      <input type="text" class="form-control " id="login" value="Введите логин или email">
+                   </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="row">
-                      <div class="col-sm-12">
-                          <label for="login">Пароль</label>
-                          <input type="text" class="form-control " id="login" value="Введите ваш пароль">
-                      </div>
-                  </div>
+                 <div class="row">
+                    <div class="col-sm-8 col-md-offset-2">
+                      <label for="login">Пароль</label>
+                      <input type="text" class="form-control " id="login" value="Введите ваш пароль">
+                    </div>
+                 </div>
                 </div>
-                <button type="button" class="btn btn-success btn-lg">Вход</button>
+                <div class="form-group margin-vertical">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-offset-2">
+                           <div class="margin-vertical">
+                                <label class="checkbox-inline">
+                                <input type="checkbox">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных, соглашаюсь с публичной офертой и правилами сайта.</label>
+                           </div>
+                           <div class="margin-vertical">
+                                <label class="checkbox-inline">
+                                <input type="checkbox">Получать новости и рассылки с сайта.</label>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="row">
+                   <div class="col-sm-8 col-md-offset-2">
+                       <button type="button" class="btn btn-success btn-lg">Регистрация</button>
+                   </div>
+               </div>
                 <div class="text-center">
-                  <a href="#" class="margin-horizontal">Востановить пароль</a>
-                  <a href="#" class="decoration margin-horizontal">Регистрация</a></div>
+                  <a href="#" class="decoration margin-horizontal">У меня есть аккаунт</a></div>
               </div>
             </div>
           </form>
@@ -253,3 +279,4 @@
 
 </body>
 </html>
+

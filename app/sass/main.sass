@@ -556,7 +556,40 @@ strong
   .text-description
     i
       margin-right: 4px
-
+/*======carousel style======*/
+.carousel-indicators
+	li
+		background-color: $gray
+		border-color: $gray
+		&.active
+			background-color: $water-blue
+			border-color: $water-blue
+.carousel-indicators
+	bottom: unset
+	top: 0
+	width: auto
+	margin-left: 0
+	transform: translateX(-50%)
+.item
+	.panel-body
+		.text-muted
+			font-size: 11px
+		a
+			transition: all 0.3s
+			&:hover
+				h6
+					color: $water-blue
+		h6
+			margin: 4px 0
+			color: $black
+			font-size: 14px
+			font-family: $semi-font
+	.panel
+		margin-bottom: 0
+		border-radius: 0
+	.col-md-5
+		p
+			line-height: 1.5
 /*====Open Post Page Style Start=====*/
 
 .breadcrumb
@@ -737,11 +770,11 @@ textarea
     p
       color: $color-muted
     i
-      margin-right: 10px
+      margin: 10px
       color: $color-muted
 
 .comments
-  border: 1px solid #e8e8e8
+  border: 1px solid $gray
   padding: 8px
   label
     color: $water-blue
@@ -751,6 +784,7 @@ textarea
     margin: 0 15px
   a
     color: $color-muted
+    
 
 /*======Карточка автоэксперта/Услуги====*/
 .btn-back
@@ -796,7 +830,43 @@ textarea
       margin-right: 8px
 .text-small
   font-size: 11px
+
+ul
+.list-inline
+    li
+        padding-left: 0px
+    a
+        &.active
+            color: $water-blue
+        
+
 /*====Open Post Page Style End=====*/
+/*=====search expert map======*/
+.input-group-addon
+	border-color: $gray
+	background-color: $white
+	border-right: none
+	padding-right: 0
+	&+input
+		border-left: none
+		box-shadow: none
+		padding-left: 0
+		&:focus
+			border-left: none
+			box-shadow: none
+.flex-between
+	display: flex
+	justify-content: between
+	margin-left: -8px
+	margin-right: -8px
+	.form-group
+		margin: 8px
+		width: calc(20% -16px)
+		max-width: calc(20% - 16px)
+		min-width: calc(20% - 16px)
+
+
+
 
 @import "media"
 // Всегда в конце
