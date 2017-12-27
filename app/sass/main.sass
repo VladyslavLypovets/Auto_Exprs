@@ -610,14 +610,12 @@ a.decoration
 	margin: 0 16px
 
 /*======Blog====*/
-h5
-	margin: 0
-	a
-		color: $black
-		font-size: 16px
-		font-weight: 600
-		&:hover
-			color: #1b98de
+a
+	color: $black
+	font-size: 16px
+	font-weight: 600
+	&:hover
+		color: #1b98de
 .list-group
 	li
 		margin-bottom: 15px
@@ -626,13 +624,16 @@ h5
 .text-description
 	font-size: 13px
 .panel-default
+	h5
+		margin: 0
 	i
 		padding-right: 4px
 	.fa-folder-o
 		padding-right: 16px
-	img
+	.img-rounded
 		border: solid 1px #e8e8e8
 		float: right
+
 .margin-vertical
     margin: 16px 0
     
@@ -647,10 +648,7 @@ textarea.form-control
     resize: none
     border-radius: 0px
     
-.panel .panel-body
-    padding: 0px
-    
- 
+
 .input-file
     border-radius: 0px 0px 4px 4px
     background: $gray
