@@ -18,7 +18,7 @@ var gulp           = require('gulp'),
 
 gulp.task('common-js', function() {
 	return gulp.src([
-		'app/js/common.js',
+        'app/js/common.js',
 		])
 	.pipe(concat('common.min.js'))
 	.pipe(uglify())
@@ -30,6 +30,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap/bootstrap.js',
 		"app/libs/bootstrap-select/bootstrap-select.min.js",
+        'app/libs/bootstrap-datepicker/bootstrap-datepicker.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
