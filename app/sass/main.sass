@@ -110,6 +110,8 @@ label
   box-shadow: 0 1px 3px 0 #c87233, inset 0 1px 0 0 rgba(255, 255, 255, 0.25)
   border: none
   color: $white
+  font-size: 18px
+  font-family: $semi-font
   &:hover, &:focus, &:active
     background-color: $btn-danger_focus
     border: none
@@ -306,6 +308,7 @@ p
   .container
     .navbar-brand
       padding: 0
+      height: auto
       margin-right: 100px
       margin-left: 0
   li
@@ -696,8 +699,6 @@ a
   &.mobile_link
     text-decoration: underline
     font-size: 14px
-  &:hover
-    text-decoration: none
 
 .pay
   margin-bottom: 0
@@ -718,12 +719,6 @@ a
   font-family: $default-font
   &:hover
     color: $black
-
-a
-  &.decoration
-    text-decoration: underline
-  &:hover
-    text-decoration: none
 
 .margin-horizontal
   margin: 0 16px
@@ -766,6 +761,8 @@ a
   label
     font-weight: 600
     font-size: 14px
+  .lead
+    font-size: 16px
 
 textarea
   &.form-control
@@ -869,7 +866,7 @@ ul
     border-color: 1px solid #4caf50
 
 .fa-camera, .fa-video-camera
-  color: 1b98de
+  color: #1b98de
   font-size: 13px
 
 
@@ -985,10 +982,12 @@ ul
 
 .line-height
     line-height: 1.6
-   
-
-
 .flex-between
+    .form-group
+        .pull-left
+            width: 49%
+        .pull-right
+            width: 49% 
   display: flex
   justify-content: space-between
   margin-left: -8px
@@ -999,6 +998,18 @@ ul
     max-width: calc(20% - 16px)
     min-width: calc(20% - 16px)
 
+.fa-arrow-right
+  padding-left: 8px
 
+.btn.text-description
+  padding: 6px
+  i
+    padding-left: 4px
+.text-danger
+  color: $red
+
+.input-file
+  .btn-back
+    margin-bottom: 0
 @import "media"
 // Всегда в конце
