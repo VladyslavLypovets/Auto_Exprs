@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>Title</title>
+    <title>Рейтинг автоэкспертов/Списки</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,20 +73,34 @@
 <main>
     <div class="container">
         <div class="row">
-            <ul class="breadcrumb">
-                <li><a href="#">Главная</a></li>
-                <li>Поиск автоэксперта</li>
-            </ul>
+            <div class="col-sm-12 margin-vertical">
+                <ul class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li>Поиск автоэксперта</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container">
         <h4>Рейтинг автоэкспертов</h4>
-        <div class="form-group">
-            <select class="selectpicker">
-                <option>Показывать топ 50</option>
-                <option>Ketchup</option>
-                <option>Relish</option>
-            </select>
+        <div class="row">
+            <div class="col-sm-6 margin-vertical">
+                <div class="form-group">
+                    <select class="selectpicker">
+                        <option>Показывать топ 50</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6 margin-vertical">
+                <div class="pull-right">
+                    <span class="margin-horizontal">Вид:</span>
+                    <a href="#" class="text-muted"><i class="fa fa-th-list"></i></a>
+                    <a href="#" class="active"><i class="fa fa-th"></i></a>
+                    <a href="#" class="text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -96,9 +110,9 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-3">
-                                    <img src="img/ekspert_4.jpg" alt="expert" class="img-responsive">
+                                <img src="img/ekspert_4.jpg" alt="expert" class="img-rounded img-responsive">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <div class="caption">
                                     <h4>Иванов Алексей Сергеевич <i class="fa fa-get-pocket" aria-hidden="true"></i></h4>
                                     <div class="labels-wrap">
@@ -110,20 +124,121 @@
                                     <p class="text-description margin-vertical">Подберу лучшее предложение на рынке с гарантией технической и юридической чистоты. Срок подбора 2 недели. Если в установленный срок не подберу достойный автомобиль, верну деньги.</p>
                                 </div>
                                 <div>
-                                    <span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i><span>123</span></span>
-                                    <span class="text-muted margin-horizontal"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>16</span></span>
-                                    <span class="text-muted"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span>47</span></span>
-                                    <span class="text-muted margin-horizontal"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i><span>0</span></span>
-                                    <span class="pull-right text-muted">18 часов назад</span>
+                                    <span class="text-muted text-description">Навыки:</span>
+                                    <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
+                                    <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 text-right">
-                                <button type="button" class="btn btn-warning">Заказать услугу</button>
-                                <button type="button" class="btn btn-default">Написать сообщение</button>
+                            <div class="col-md-2 margin-vertical">
+                                <div class="row">
+                                    <button type="button" class="btn btn-warning btn-back">Заказать услугу</button>
+                                    <button type="button" class="btn btn-default btn-back">Написать сообщение</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/ekspert_3.jpg" alt="expert" class="img-rounded img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="caption">
+                                    <h4>Козаков Петр Николаевич <i class="fa fa-get-pocket" aria-hidden="true"></i></h4>
+                                    <div class="labels-wrap">
+                                        <span class="label label-success">Отлично</span><span class="text-muted">9.3 из 10</span>
+                                        <span class="text-muted">Отзывы: <span>19</span></span>
+                                        <span class="text-muted">Сделки: <span>19</span></span>
+                                    </div>
+                                    <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
+                                    <p class="text-description margin-vertical">Помогу Вам удачно подобрать, тщательно проверить и выгодно купить подержанный автомобиль: проведем техническую и юридическую проверку автомобиля перед покупкой, включая проверку на угон (розыск) и другое. </p>
+                                </div>
+                                <div>
+                                    <span class="text-muted text-description">Навыки:</span>
+                                    <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
+                                    <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
+                                    <button type="button" class="btn btn-back btn-skills">Автокриминалист</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2 margin-vertical">
+                                <div class="row">
+                                    <button type="button" class="btn btn-warning btn-back">Заказать услугу</button>
+                                    <button type="button" class="btn btn-default btn-back">Написать сообщение</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/ekspert_2.jpg" alt="expert" class="img-rounded img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="caption">
+                                    <h4>Мишинкин Даниил Алексеевич <i class="fa fa-get-pocket" aria-hidden="true"></i></h4>
+                                    <div class="labels-wrap">
+                                        <span class="label label-success">Отлично</span><span class="text-muted">9.1 из 10</span>
+                                        <span class="text-muted">Отзывы: <span>18</span></span>
+                                        <span class="text-muted">Сделки: <span>21</span></span>
+                                    </div>
+                                    <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
+                                    <p class="text-description margin-vertical">Подберу лучшее предложение на рынке с гарантией технической и юридической чистоты. Срок подбора 2 недели. Если в установленный срок не подберу достойный автомобиль, верну деньги.</p>
+                                </div>
+                                <div>
+                                    <span class="text-muted text-description">Навыки:</span>
+                                    <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
+                                    <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
+                                    <button type="button" class="btn btn-back btn-skills">Механик</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2 margin-vertical">
+                                <div class="row">
+                                    <button type="button" class="btn btn-warning btn-back">Заказать услугу</button>
+                                    <button type="button" class="btn btn-default btn-back">Написать сообщение</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/ekspert_1.jpg" alt="expert" class="img-rounded img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="caption">
+                                    <h4>Кузнецов Сергей Витальевич <i class="fa fa-get-pocket" aria-hidden="true"></i></h4>
+                                    <div class="labels-wrap">
+                                        <span class="label label-success">Отлично</span><span class="text-muted">9 из 10</span>
+                                        <span class="text-muted">Отзывы: <span>16</span></span>
+                                        <span class="text-muted">Сделки: <span>16</span></span>
+                                    </div>
+                                    <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
+                                    <p class="text-description margin-vertical">За это время у меня накопился огромный опыт, позволяющий учитывать все нюансы подбираемого автомобиля. 105 параметров проверкипозволяют нам подбирать лучшие авто для моих клиентов.</p>
+                                </div>
+                                <div>
+                                    <span class="text-muted text-description">Навыки:</span>
+                                    <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
+                                    <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
+                                    <button type="button" class="btn btn-back btn-skills">Механик</button>
+                                    <button type="button" class="btn btn-back btn-skills">Слесарь</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2 margin-vertical">
+                                <div class="row">
+                                    <button type="button" class="btn btn-warning btn-back">Заказать услугу</button>
+                                    <button type="button" class="btn btn-default btn-back">Написать сообщение</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row text-center">
             <ul class="pagination">
@@ -138,13 +253,12 @@
             </ul>
         </div>
     </div>
+
     <div class="container">
-        <div class="row">
-            <h4>О сервисе "Автоподбор"</h4>
-            <p>
-                Комплексная услуга по поиску и приобретению автомобиля с заявленными параметрами. Исключите риск покупки авто восстановленного после аварии, вероятность скрученного пробега, наличие скрытых дефектов или юридических проблем. Не тратьте время и деньги на многочисленные просмотры, встречи с перекупщиками и настойчивыми продавцами в автосалонах. Обращайтесь к экспертам и приобретайте проверенный автомобиль по выгодной цене. Вы получите рекомендации специалиста по выбору марки/модели автомобиля, особенностях комплектации и рыночной стоимости. Все желаемые параметры (модель, год выпуска, комплектация, цвет, пробег...) оговариваются в договоре.
-            </p>
-        </div>
+        <h4>О сервисе "Автоподбор"</h4>
+        <p>
+            Комплексная услуга по поиску и приобретению автомобиля с заявленными параметрами. Исключите риск покупки авто восстановленного после аварии, вероятность скрученного пробега, наличие скрытых дефектов или юридических проблем. Не тратьте время и деньги на многочисленные просмотры, встречи с перекупщиками и настойчивыми продавцами в автосалонах. Обращайтесь к экспертам и приобретайте проверенный автомобиль по выгодной цене. Вы получите рекомендации специалиста по выбору марки/модели автомобиля, особенностях комплектации и рыночной стоимости. Все желаемые параметры (модель, год выпуска, комплектация, цвет, пробег...) оговариваются в договоре.
+        </p>
     </div>
 </main>
 <footer>
