@@ -555,6 +555,7 @@ strong
   display: flex
   flex-direction: column
   justify-content: flex-end
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6))
   label
     color: $white
     font-size: 15px
@@ -987,21 +988,10 @@ ul
         .pull-left
             width: 49%
         .pull-right
-            width: 49% 
-  display: flex
-  justify-content: space-between
-  margin-left: -8px
-  margin-right: -8px
-  .form-group
-    margin: 8px
-    width: calc(20% - 16px)
-    max-width: calc(20% - 16px)
-    min-width: calc(20% - 16px)
+            width: 49%
 
 .fa-arrow-right
   padding-left: 8px
-
-
 
 .btn.text-description
   padding: 6px
@@ -1014,5 +1004,15 @@ ul
 .input-file
   .btn-back
     margin-bottom: 0
+.dropdown-triger
+  display: inline-block
+  padding: 8px
+  background: #34373c
+  color: $white
+  font-size: 14px
+  cursor: pointer
+  &:hover
+    color: $white
+    text-decoration: none
 @import "media"
 // Всегда в конце
