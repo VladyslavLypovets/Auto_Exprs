@@ -556,6 +556,7 @@ strong
   display: flex
   flex-direction: column
   justify-content: flex-end
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6))
   label
     color: $white
     font-size: 15px
@@ -994,6 +995,7 @@ ul
         .pull-right
             width: 49% 
 
+
 .fa-arrow-right
   padding-left: 8px
 
@@ -1003,6 +1005,15 @@ ul
     padding-left: 4px
 .text-danger
   color: $red
-
+.dropdown-triger
+  display: inline-block
+  padding: 8px
+  background: #34373c
+  color: $white
+  font-size: 14px
+  cursor: pointer
+  &:hover
+    color: $white
+    text-decoration: none
 @import "media"
 // Всегда в конце
