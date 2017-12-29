@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Каталог провереных автомобилей</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<p><i class="fa fa-location-arrow" aria-hidden="true"></i> г.Москва</p>
+					</div>
+					<div class="col-xs-6 text-right">
+						<p>Валюта: <i class="fa fa-rub" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar">
+		  <div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+				    <div class="navbar-header cleafix">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" class="img-responsive"></a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">Каталог подборщиков</a></li>
+				        <li><a href="#">Проверенные авто</a></li>
+				        <li><a href="#">Поиск</a></li>
+								<li><a href="#">Блог</a> <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Войти</a></li>
+				      </ul>
+				    </div>
+					</div>
+				</div>
+		  </div>
+		</nav>
+	</header>
+	<main>
+	   <div class="container">
+      <h4>Проверенные автомобили</h4>
+      <p>
+        Поиск и подбор автомобиля, по Вашим параметрам. Автомобиль подбирается с учетом Ваших пожеланий и бюджета, мы подберем оптимальный вариант. При заключении договора на подбор автомобиля, все экспертизы и проверки включены в стоимость.
+        Вы получаете полностью проверенный автомобиль, в соответствии со своими пожеланиями.
+      </p>
+      <div class="panel panel-default margin-vertical">
+        <div class="panel-body">
+          <form action="#">
+            <div class="input-group">
+              <span class="input-group-addon text-muted">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+              <input type="text" class="form-control" name="search" placeholder="Например: BMW">
+            </div>
+            <div class="flex-between">
+              <div class="form-group">
+               <strong class="line-height text-description">Рейтинг автоэксперта</strong>
+                <select class="form-control" id="sel7">
+                  <option>Проверка 1-го авто</option>
+                  <option>Подборка под ключ</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Марка авто</strong>
+                <select class="form-control" id="sel6">
+                  <option>BMW</option>
+                  <option>Mersedes</option>
+                  <option>Volkswagen</option>
+                </select>
+              </div>
+              <div class="form-group">
+               <strong class="line-height text-description">Модель авто</strong>
+                <select class="form-control" id="sel7">
+                  <option>C320</option>
+                  <option>C330</option>
+                  <option>C340</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Год выпуска</strong>
+                <select class="form-control" id="sel8">
+                  <option>2005</option>
+                  <option>2002</option>
+                  <option>1998</option>
+                </select>
+              </div>
+
+                <div class="form-group">
+                 <strong class="line-height text-description">Цена</strong>
+                  <div class="clearfix">
+                       <div class="pull-left text-align-center">
+                           <input type="text" class="form-control text-center"     placeholder="От">
+                        </div>
+                        <div class="pull-right">
+                            <input type="text" class="form-control text-center" placeholder="До">
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="flex-between">
+                <div class="form-group">
+                <strong class="line-height text-description">Год выпуска</strong>
+                <select class="form-control" id="sel8">
+                  <option>Год выпуска</option>
+                  <option>2005</option>
+                  <option>2002</option>
+                  <option>1998</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Двигатель</strong>
+                <select class="form-control" id="sel8">
+                  <option>Дизельный</option>
+                  <option>Бензиновый</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Привод</strong>
+                <select class="form-control" id="sel8">
+                  <option>Передний</option>
+                  <option>Задний</option>
+                  <option>Полноприводный</option>
+                </select>
+              </div>
+               <div class="form-group">
+                <strong class="line-height text-description">Коробка</strong>
+                <select class="form-control" id="sel8">
+                  <option>Механическая</option>
+                  <option>Автомат</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Объем двигателя</strong>
+                <select class="form-control" id="sel8">
+                  <option>2000 см³</option>
+                  <option>1396 см³</option>
+                  <option>1896 см³</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <strong class="line-height text-description">Тип кузова</strong>
+                                <select class="form-control" id="sel8">
+                                  <option>Седан</option>
+                                  <option>Универсал</option>
+                                  <option>Хэтчбек</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-md-7 margin-vertical">
+                            <label class="checkbox-inline text-description margin-vertical"><input class="margin-vertical" type="checkbox" value="">Только с фото</label>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6">
+               <div>
+                    <strong class="line-height text-description"> <br></strong>
+                <div class="pull-right">
+                  <a href="#" class="margin-horizontal link-decoration text-muted">Сбросить параметры</a>
+                  <a href="#" class="margin-horizontal link-decoration text-muted">Скрыть параметры</a>
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+              </div>
+             </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <h5>Найдено 14 автомобилей</h5>
+      <div class="row">
+        <div class="col-md-6">
+					<ul class="list-inline margin-vertical">
+						 <li>
+								 <strong>Сортировать:</strong>
+						 </li>
+						 <li>
+								 <a href="#"  class="active">по рейтингу</a>
+						 </li>
+						 <li>
+								 <a href="#" class="text-muted">по стоимости</a>
+						 </li>
+					 </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline pull-right">
+            <li>
+              <span class="margin-horizontal">Вид:</span>
+  						<a href="#" class="text-muted"><i class="fa fa-th-list"></i></a>
+  						<a href="#" class="active"><i class="fa fa-th"></i></a>
+  						<a href="#" class="text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <select class="selectpicker">
+  		          <option>Показывать топ 10</option>
+  		          <option>Ketchup</option>
+  		          <option>Relish</option>
+  		        </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="block-wrap">
+        <div class="container">
+          <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A0e76b575a8880c766464e2d40d3777068e4e21cb1c23eed727bb5e38275ecd1b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+    </div>
+         <div class="container">
+             <div class="row">
+             <h4>О сервисе "Автоподбор"</h4>
+              <p>
+                Комплексная услуга по поиску и приобретению автомобиля с заявленными параметрами. Исключите риск покупки авто восстановленного после аварии, вероятность скрученного пробега, наличие скрытых дефектов или юридических проблем. Не тратьте время и деньги на многочисленные просмотры, встречи с перекупщиками и настойчивыми продавцами в автосалонах. Обращайтесь к экспертам и приобретайте проверенный автомобиль по выгодной цене. Вы получите рекомендации специалиста по выбору марки/модели автомобиля, особенностях комплектации и рыночной стоимости. Все желаемые параметры (модель, год выпуска, комплектация, цвет, пробег...) оговариваются в договоре.
+              </p>
+             </div>
+        </div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="#"><img src="img/footer_logo.svg" alt="logo" class="img-responsive"></a>
+					<a href="#">Топовые автоэксперты России</a>
+					<a href="#" class="mobile_link">Мобильная версия</a>
+				</div>
+				<div class="col-md-2">
+					<a href="#">Главная</a>
+					<a href="#">Автоэксперты</a>
+					<a href="#">Провереные авто</a>
+					<a href="#">Рейтинг автоэкспертов</a>
+				</div>
+				<div class="col-md-2">
+					<a href="#">О сервисе</a>
+					<a href="#">Условия и гарантии</a>
+					<a href="#">Помощь</a>
+					<a href="#">О компании</a>
+				</div>
+				<div class="col-md-4 col-md-offset-1">
+					<h5>Мы в соц.сетях</h5>
+					<ul class="list-style list-inline">
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-odnoklassniki fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<h5>Пополнение баланса</h5>
+					<ul class="list-style list-inline pay">
+						<li>
+							<a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<a href="#">Доступно 24 способа пополнения</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-left">
+					<a href="tel:8 (800) 543-16-01">8 (800) 543-16-01 с 9:00 до 20:00 мск</a>
+				</div>
+				<div class="col-md-4 text-left">
+					<a> 419021, Россия, г. Москва, ул. Пушкина 1</a>
+				</div>
+				<div class="col-md-4 text-right">
+					<a href="mailto:contact@avtpodbor.ru">ООО "Автоподбор"    contact@avtpodbor.ru</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-left">
+					<p>© 2017 | ООО "Автоподбор"</p>
+				</div>
+				<div class="col-md-9 text-right">
+					<p>Информация на сайте autopodbor.ru носит ознакомительный характер и не является публичной офертой.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

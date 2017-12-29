@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Каталог провереных автомобилей</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,45 +72,110 @@
 	</header>
 	<main>
 	   <div class="container">
-        <div class="row">
-            <h4>Проверенные автомобили</h4>
-            <p>
-                Поиск и подбор автомобиля, по Вашим параметрам. Автомобиль подбирается с учетом Ваших пожеланий и бюджета, мы подберем оптимальный вариант. При заключении договора на подбор автомобиля, все экспертизы и проверки включены в стоимость.
-                Вы получаете полностью проверенный автомобиль, в соответствии со своими пожеланиями.
-            </p>
-            <div class="panel panel-default margin-vertical">
-                <div class="panel-body">
-                    <form action="#">
-                        <div class="input-group">
-                  <span class="input-group-addon text-muted">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                  </span>
-                            <input type="text" class="form-control" name="search" placeholder="Например: BMW">
+      <h4>Проверенные автомобили</h4>
+      <p>
+        Поиск и подбор автомобиля, по Вашим параметрам. Автомобиль подбирается с учетом Ваших пожеланий и бюджета, мы подберем оптимальный вариант. При заключении договора на подбор автомобиля, все экспертизы и проверки включены в стоимость.
+        Вы получаете полностью проверенный автомобиль, в соответствии со своими пожеланиями.
+      </p>
+      <div class="panel panel-default margin-vertical">
+        <div class="panel-body">
+          <form action="#">
+            <div class="input-group">
+              <span class="input-group-addon text-muted">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+              <input type="text" class="form-control" name="search" placeholder="Например: BMW">
+            </div>
+            <div class="flex-between">
+              <div class="form-group">
+               <strong class="line-height text-description">Рейтинг автоэксперта</strong>
+                <select class="form-control" id="sel7">
+                  <option>Проверка 1-го авто</option>
+                  <option>Подборка под ключ</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Марка авто</strong>
+                <select class="form-control" id="sel6">
+                  <option>BMW</option>
+                  <option>Mersedes</option>
+                  <option>Volkswagen</option>
+                </select>
+              </div>
+              <div class="form-group">
+               <strong class="line-height text-description">Модель авто</strong>
+                <select class="form-control" id="sel7">
+                  <option>C320</option>
+                  <option>C330</option>
+                  <option>C340</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Год выпуска</strong>
+                <select class="form-control" id="sel8">
+                  <option>2005</option>
+                  <option>2002</option>
+                  <option>1998</option>
+                </select>
+              </div>
+
+                <div class="form-group">
+                 <strong class="line-height text-description">Цена</strong>
+                  <div class="clearfix">
+                       <div class="pull-left text-align-center">
+                           <input type="text" class="form-control text-center"     placeholder="От">
                         </div>
-                        <div class="flex-between">
-                            <div class="form-group">
-                                <strong class="line-height text-description">Рейтинг автоэксперта</strong>
-                                <select class="form-control" id="sel7">
-                                    <option>Проверка 1-го авто</option>
-                                    <option>Подборка под ключ</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <strong class="line-height text-description">Марка авто</strong>
-                                <select class="form-control" id="sel6">
-                                    <option>BMW</option>
-                                    <option>Mersedes</option>
-                                    <option>Volkswagen</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <strong class="line-height text-description">Модель авто</strong>
-                                <select class="form-control" id="sel7">
-                                    <option>C320</option>
-                                    <option>C330</option>
-                                    <option>C340</option>
-                                </select>
-                            </div>
+                        <div class="pull-right">
+                            <input type="text" class="form-control text-center" placeholder="До">
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="flex-between">
+                <div class="form-group">
+                <strong class="line-height text-description">Год выпуска</strong>
+                <select class="form-control" id="sel8">
+                  <option>Год выпуска</option>
+                  <option>2005</option>
+                  <option>2002</option>
+                  <option>1998</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Двигатель</strong>
+                <select class="form-control" id="sel8">
+                  <option>Дизельный</option>
+                  <option>Бензиновый</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Привод</strong>
+                <select class="form-control" id="sel8">
+                  <option>Передний</option>
+                  <option>Задний</option>
+                  <option>Полноприводный</option>
+                </select>
+              </div>
+               <div class="form-group">
+                <strong class="line-height text-description">Коробка</strong>
+                <select class="form-control" id="sel8">
+                  <option>Механическая</option>
+                  <option>Автомат</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <strong class="line-height text-description">Объем двигателя</strong>
+                <select class="form-control" id="sel8">
+                  <option>2000 см³</option>
+                  <option>1396 см³</option>
+                  <option>1896 см³</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <strong class="line-height text-description">Год выпуска</strong>
                                 <select class="form-control" id="sel8">
@@ -208,8 +273,7 @@
         </div>
     </div>
      <div class="container">
-      <div class="row">
-          <h5>Найдено 25 специалистов по подбору авто под ключ</h5>
+      <h5>Найдено 14 автомобилей</h5>
           <div class="row">
               <div class="col-md-6">
                   <ul class="list-inline margin-vertical">
@@ -246,340 +310,338 @@
     </div>
     <div class="block-wrap">
         <div class="container">
-            <div class="row">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                           <div class="col-md-3">
-                                <img src="img/benz.jpg" alt="zimnie_shini" class="img-responsive ">
-                            </div>
-                            <div class="col-md-9 line-height">
-                                <div class="">
-                                    <div class="col-sm-3 pull-right">
-                                    <div class="row">
-                                       <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
-                                        <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
-                                        <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
-                                    </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                       <div class="col-md-3">
+                            <img src="img/benz.jpg" alt="zimnie_shini" class="img-responsive ">
+                        </div>
+                        <div class="col-md-9 line-height">
+                            <div class="">
+                                <div class="col-sm-3 pull-right">
+                                <div class="row">
+                                   <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
+                                    <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+                                    <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
                                 </div>
-                                <h5>Mercedes Benz</h5>
-                                <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
-                                <p class="text-description">
-                                    <strong>Стоимость авто:</strong>
-                                    <span>1 520 000 руб.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Дата проверки:</strong>
-                                    <span>31.07.17</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Эксперт:</strong>
-                                    <span>Иванов Алексей Сергеевич</span>
-                                    <span class="margin-horizontal">
-                                        <i class="icon-icon-accept" aria-hidden="true"></i>
-                                        <span class="label label-success">Отлично 9.4</span>
-                                    </span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Заключение:</strong>
-                                    <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Продавец:</strong>
-                                    <span >Миронов Вячеслав</span>
-                                    <a href="tel:" class="margin-horizontal">
-                                        <i class="fa fa-phone text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">8 (800) 241 52 01</span>
-                                    </a>
-                                </p>
-                                <div class="margin-vertical">
-                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text-muted text-small"><span>г.Москва</span></span>
+                            </div>
+                            <h5>Mercedes Benz</h5>
+                            <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+                            <p class="text-description">
+                                <strong>Стоимость авто:</strong>
+                                <span>1 520 000 руб.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Дата проверки:</strong>
+                                <span>31.07.17</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Эксперт:</strong>
+                                <span>Иванов Алексей Сергеевич</span>
+                                <span class="margin-horizontal">
+                                    <i class="icon-icon-accept" aria-hidden="true"></i>
+                                    <span class="label label-success">Отлично 9.4</span>
+                                </span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Заключение:</strong>
+                                <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Продавец:</strong>
+                                <span >Миронов Вячеслав</span>
+                                <a href="tel:" class="margin-horizontal">
+                                    <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                                    <span class="text-muted">8 (800) 241 52 01</span>
+                                </a>
+                            </p>
+                            <div class="margin-vertical">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="text-muted text-small"><span>г.Москва</span></span>
 
-                               <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
-                                </div>
+                           <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                           <div class="col-md-3">
-                                <img src="img/bmw3.jpg" alt="zimnie_shini" class="img-responsive ">
-                            </div>
-                            <div class="col-md-9 line-height">
-                                <div class="">
-                                    <div class="col-sm-3 pull-right">
-                                    <div class="row">
-                                         <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>бесплатно</strong></span></span></div>
-                                        <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
-                                        <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
-                                    </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                       <div class="col-md-3">
+                            <img src="img/bmw3.jpg" alt="zimnie_shini" class="img-responsive ">
+                        </div>
+                        <div class="col-md-9 line-height">
+                            <div class="">
+                                <div class="col-sm-3 pull-right">
+                                <div class="row">
+                                     <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>бесплатно</strong></span></span></div>
+                                    <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+                                    <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
                                 </div>
-                                <h5>BMW 3</h5>
-                                <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
-                                <p class="text-description">
-                                    <strong>Стоимость авто:</strong>
-                                    <span>1 520 000 руб.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Дата проверки:</strong>
-                                    <span>31.07.17</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Эксперт:</strong>
-                                    <span>Иванов Алексей Сергеевич</span>
-                                    <span class="margin-horizontal">
-                                        <i class="icon-icon-accept" aria-hidden="true"></i>
-                                        <span class="label label-success">Отлично 9.4</span>
-                                    </span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Заключение:</strong>
-                                    <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Продавец:</strong>
-                                    <span >Миронов Вячеслав</span>
-                                    <a href="tel:" class="margin-horizontal">
-                                        <i class="fa fa-phone text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">8 (800) 241 52 01</span>
-                                    </a>
-                                </p>
-                                <div class="margin-vertical">
-                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text-muted text-small"><span>г.Москва</span></span>
+                            </div>
+                            <h5>BMW 3</h5>
+                            <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+                            <p class="text-description">
+                                <strong>Стоимость авто:</strong>
+                                <span>1 520 000 руб.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Дата проверки:</strong>
+                                <span>31.07.17</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Эксперт:</strong>
+                                <span>Иванов Алексей Сергеевич</span>
+                                <span class="margin-horizontal">
+                                    <i class="icon-icon-accept" aria-hidden="true"></i>
+                                    <span class="label label-success">Отлично 9.4</span>
+                                </span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Заключение:</strong>
+                                <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Продавец:</strong>
+                                <span >Миронов Вячеслав</span>
+                                <a href="tel:" class="margin-horizontal">
+                                    <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                                    <span class="text-muted">8 (800) 241 52 01</span>
+                                </a>
+                            </p>
+                            <div class="margin-vertical">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="text-muted text-small"><span>г.Москва</span></span>
 
-                               <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
-                                </div>
+                           <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                           <div class="col-md-3">
-                                <img src="img/hg.jpg" alt="zimnie_shini" class="img-responsive ">
-                            </div>
-                            <div class="col-md-9 line-height">
-                                <div class="">
-                                    <div class="col-sm-3 pull-right">
-                                    <div class="row">
-                                        <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
-                                        <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
-                                        <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
-                                    </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                       <div class="col-md-3">
+                            <img src="img/hg.jpg" alt="zimnie_shini" class="img-responsive ">
+                        </div>
+                        <div class="col-md-9 line-height">
+                            <div class="">
+                                <div class="col-sm-3 pull-right">
+                                <div class="row">
+                                    <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
+                                    <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+                                    <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
                                 </div>
-                                <h5>Hyundai i40</h5>
-                                <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
-                                <p class="text-description">
-                                    <strong>Стоимость авто:</strong>
-                                    <span>1 520 000 руб.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Дата проверки:</strong>
-                                    <span>31.07.17</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Эксперт:</strong>
-                                    <span>Иванов Алексей Сергеевич</span>
-                                    <span class="margin-horizontal">
-                                        <i class="icon-icon-accept" aria-hidden="true"></i>
-                                        <span class="label label-success">Отлично 9.4</span>
-                                    </span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Заключение:</strong>
-                                    <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Продавец:</strong>
-                                    <span >Миронов Вячеслав</span>
-                                    <a href="tel:" class="margin-horizontal">
-                                        <i class="fa fa-phone text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">8 (800) 241 52 01</span>
-                                    </a>
-                                </p>
-                                <div class="margin-vertical">
-                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text-muted text-small"><span>г.Москва</span></span>
+                            </div>
+                            <h5>Hyundai i40</h5>
+                            <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+                            <p class="text-description">
+                                <strong>Стоимость авто:</strong>
+                                <span>1 520 000 руб.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Дата проверки:</strong>
+                                <span>31.07.17</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Эксперт:</strong>
+                                <span>Иванов Алексей Сергеевич</span>
+                                <span class="margin-horizontal">
+                                    <i class="icon-icon-accept" aria-hidden="true"></i>
+                                    <span class="label label-success">Отлично 9.4</span>
+                                </span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Заключение:</strong>
+                                <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Продавец:</strong>
+                                <span >Миронов Вячеслав</span>
+                                <a href="tel:" class="margin-horizontal">
+                                    <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                                    <span class="text-muted">8 (800) 241 52 01</span>
+                                </a>
+                            </p>
+                            <div class="margin-vertical">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="text-muted text-small"><span>г.Москва</span></span>
 
-                               <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
-                                </div>
+                           <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                           <div class="col-md-3">
-                                <img src="img/benz.jpg" alt="zimnie_shini" class="img-responsive ">
-                            </div>
-                            <div class="col-md-9 line-height">
-                                <div class="">
-                                    <div class="col-sm-3 pull-right">
-                                    <div class="row">
-                                         <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
-                                        <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
-                                        <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
-                                    </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                       <div class="col-md-3">
+                            <img src="img/benz.jpg" alt="zimnie_shini" class="img-responsive ">
+                        </div>
+                        <div class="col-md-9 line-height">
+                            <div class="">
+                                <div class="col-sm-3 pull-right">
+                                <div class="row">
+                                     <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
+                                    <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+                                    <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
                                 </div>
-                                <h5>Mercedes Benz</h5>
-                                <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
-                                <p class="text-description">
-                                    <strong>Стоимость авто:</strong>
-                                    <span>1 520 000 руб.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Дата проверки:</strong>
-                                    <span>31.07.17</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Эксперт:</strong>
-                                    <span>Иванов Алексей Сергеевич</span>
-                                    <span class="margin-horizontal">
-                                        <i class="icon-icon-accept" aria-hidden="true"></i>
-                                        <span class="label label-success">Отлично 9.4</span>
-                                    </span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Заключение:</strong>
-                                    <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Продавец:</strong>
-                                    <span >Миронов Вячеслав</span>
-                                    <a href="tel:" class="margin-horizontal">
-                                        <i class="fa fa-phone text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">8 (800) 241 52 01</span>
-                                    </a>
-                                </p>
-                                <div class="margin-vertical">
-                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text-muted text-small"><span>г.Москва</span></span>
+                            </div>
+                            <h5>Mercedes Benz</h5>
+                            <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+                            <p class="text-description">
+                                <strong>Стоимость авто:</strong>
+                                <span>1 520 000 руб.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Дата проверки:</strong>
+                                <span>31.07.17</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Эксперт:</strong>
+                                <span>Иванов Алексей Сергеевич</span>
+                                <span class="margin-horizontal">
+                                    <i class="icon-icon-accept" aria-hidden="true"></i>
+                                    <span class="label label-success">Отлично 9.4</span>
+                                </span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Заключение:</strong>
+                                <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Продавец:</strong>
+                                <span >Миронов Вячеслав</span>
+                                <a href="tel:" class="margin-horizontal">
+                                    <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                                    <span class="text-muted">8 (800) 241 52 01</span>
+                                </a>
+                            </p>
+                            <div class="margin-vertical">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="text-muted text-small"><span>г.Москва</span></span>
 
-                               <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
-                                </div>
+                           <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                           <div class="col-md-3">
-                                <img src="img/bmw3.jpg" alt="zimnie_shini" class="img-responsive ">
-                            </div>
-                            <div class="col-md-9 line-height">
-                                <div class="">
-                                    <div class="col-sm-3 pull-right">
-                                    <div class="row">
-                                        <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>Бесплатно</strong></span></span></div>
-                                        <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
-                                        <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
-                                    </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                       <div class="col-md-3">
+                            <img src="img/bmw3.jpg" alt="zimnie_shini" class="img-responsive ">
+                        </div>
+                        <div class="col-md-9 line-height">
+                            <div class="">
+                                <div class="col-sm-3 pull-right">
+                                <div class="row">
+                                    <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>Бесплатно</strong></span></span></div>
+                                    <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+                                    <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
                                 </div>
-                                <h5>BMW 3</h5>
-                                <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
-                                <p class="text-description">
-                                    <strong>Стоимость авто:</strong>
-                                    <span>1 520 000 руб.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Дата проверки:</strong>
-                                    <span>31.07.17</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Эксперт:</strong>
-                                    <span>Иванов Алексей Сергеевич</span>
-                                    <span class="margin-horizontal">
-                                        <i class="icon-icon-accept" aria-hidden="true"></i>
-                                        <span class="label label-success">Отлично 9.4</span>
-                                    </span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Заключение:</strong>
-                                    <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Продавец:</strong>
-                                    <span >Миронов Вячеслав</span>
-                                    <a href="tel:" class="margin-horizontal">
-                                        <i class="fa fa-phone text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">8 (800) 241 52 01</span>
-                                    </a>
-                                </p>
-                                <div class="margin-vertical">
-                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text-muted text-small"><span>г.Москва</span></span>
+                            </div>
+                            <h5>BMW 3</h5>
+                            <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+                            <p class="text-description">
+                                <strong>Стоимость авто:</strong>
+                                <span>1 520 000 руб.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Дата проверки:</strong>
+                                <span>31.07.17</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Эксперт:</strong>
+                                <span>Иванов Алексей Сергеевич</span>
+                                <span class="margin-horizontal">
+                                    <i class="icon-icon-accept" aria-hidden="true"></i>
+                                    <span class="label label-success">Отлично 9.4</span>
+                                </span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Заключение:</strong>
+                                <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Продавец:</strong>
+                                <span >Миронов Вячеслав</span>
+                                <a href="tel:" class="margin-horizontal">
+                                    <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                                    <span class="text-muted">8 (800) 241 52 01</span>
+                                </a>
+                            </p>
+                            <div class="margin-vertical">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="text-muted text-small"><span>г.Москва</span></span>
 
-                               <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
-                                </div>
+                           <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                           <div class="col-md-3">
-                                <img src="img/hg.jpg" alt="zimnie_shini" class="img-responsive ">
-                            </div>
-                            <div class="col-md-9 line-height">
-                                <div class="">
-                                    <div class="col-sm-3 pull-right">
-                                    <div class="row">
-                                         <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
-                                        <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
-                                        <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
-                                    </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                       <div class="col-md-3">
+                            <img src="img/hg.jpg" alt="zimnie_shini" class="img-responsive ">
+                        </div>
+                        <div class="col-md-9 line-height">
+                            <div class="">
+                                <div class="col-sm-3 pull-right">
+                                <div class="row">
+                                     <div class="text-center"><span class="text-decoration text-muted">Стоимость отчета <br><span><strong>500 руб.</strong></span></span></div>
+                                    <button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+                                    <button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
                                 </div>
-                                <h5>Hyundai i40</h5>
-                                <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
-                                <p class="text-description">
-                                    <strong>Стоимость авто:</strong>
-                                    <span>1 520 000 руб.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Дата проверки:</strong>
-                                    <span>31.07.17</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Эксперт:</strong>
-                                    <span>Иванов Алексей Сергеевич</span>
-                                    <span class="margin-horizontal">
-                                        <i class="icon-icon-accept" aria-hidden="true"></i>
-                                        <span class="label label-success">Отлично 9.4</span>
-                                    </span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Заключение:</strong>
-                                    <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
-                                </p>
-                                <p class="text-description">
-                                    <strong>Продавец:</strong>
-                                    <span >Миронов Вячеслав</span>
-                                    <a href="tel:" class="margin-horizontal">
-                                        <i class="fa fa-phone text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">8 (800) 241 52 01</span>
-                                    </a>
-                                </p>
-                                <div class="margin-vertical">
-                                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text-muted text-small"><span>г.Москва</span></span>
+                            </div>
+                            <h5>Hyundai i40</h5>
+                            <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+                            <p class="text-description">
+                                <strong>Стоимость авто:</strong>
+                                <span>1 520 000 руб.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Дата проверки:</strong>
+                                <span>31.07.17</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Эксперт:</strong>
+                                <span>Иванов Алексей Сергеевич</span>
+                                <span class="margin-horizontal">
+                                    <i class="icon-icon-accept" aria-hidden="true"></i>
+                                    <span class="label label-success">Отлично 9.4</span>
+                                </span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Заключение:</strong>
+                                <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+                            </p>
+                            <p class="text-description">
+                                <strong>Продавец:</strong>
+                                <span >Миронов Вячеслав</span>
+                                <a href="tel:" class="margin-horizontal">
+                                    <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                                    <span class="text-muted">8 (800) 241 52 01</span>
+                                </a>
+                            </p>
+                            <div class="margin-vertical">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="text-muted text-small"><span>г.Москва</span></span>
 
-                               <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
-                                </div>
+                           <span class="text-muted pull-right text-small">19 июля 2017 г.</span>
                             </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
