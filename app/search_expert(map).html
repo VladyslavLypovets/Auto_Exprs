@@ -81,10 +81,12 @@
       <div class="panel panel-default margin-vertical">
         <div class="panel-body">
           <form action="#">
-            <div class="input-group">
-              <span class="input-group-addon text-muted"><i class="fa fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" name="search" placeholder="Например: автоподбор BMW">
-            </div>
+            <div class="row">
+				<div class="input-group panel-padding">
+					<span class="input-group-addon text-muted"><i class="fa fa-search" aria-hidden="true"></i></span>
+					<input type="text" class="form-control" name="search" placeholder="Например: автоподбор BMW">
+				</div>
+			</div>
             <div class="flex-between">
               <div class="form-group">
                 <select class="form-control" id="sel5">
@@ -135,11 +137,15 @@
 									<a href="#" class="label-default">Добавить навык</a>
                 </div>
               </div>
-              <div class="col-md-6 pull-right">
-                <div class="pull-right">
-                  <a href="#" class="margin-horizontal link-decoration text-muted">Сбросить параметры</a>
-                  <a href="#" class="margin-horizontal link-decoration text-muted">Скрыть параметры</a>
-                  <button type="submit" class="btn btn-primary">Отправить</button>
+              <div class="col-md-7 pull-right">
+                <div class="row">
+					<div class="col-sm-8 margin-vertical">
+						<a href="#" class="margin-horizontal link-decoration text-muted">Сбросить параметры</a>
+						<a href="#" class="margin-horizontal link-decoration text-muted">Скрыть параметры</a>
+					</div>
+					<div class="col-sm-4">
+						<button type="submit" class="btn btn-primary btn-lg">Найти</button>
+					</div>
                 </div>
               </div>
             </div>
@@ -163,7 +169,7 @@
 						 </li>
 					 </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 margin-vertical">
           <ul class="list-inline pull-right">
             <li>
               <span class="margin-horizontal">Вид:</span>

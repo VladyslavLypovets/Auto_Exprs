@@ -81,9 +81,11 @@
       <div class="panel panel-default margin-vertical">
         <div class="panel-body">
           <form action="#">
-            <div class="input-group">
-              <span class="input-group-addon text-muted"><i class="fa fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" name="search" placeholder="Например: автоподбор BMW">
+            <div class="row">
+                <div class="input-group panel-padding">
+                    <span class="input-group-addon text-muted"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="search" placeholder="Например: автоподбор BMW">
+                </div>
             </div>
             <div class="flex-between">
               <div class="form-group">
@@ -135,11 +137,13 @@
 									<a href="#" class="label-default">Добавить навык</a>
                 </div>
               </div>
-              <div class="col-md-6 pull-right">
-                <div class="pull-right">
-                  <a href="#" class="margin-horizontal link-decoration text-muted">Сбросить параметры</a>
-                  <a href="#" class="margin-horizontal link-decoration text-muted">Скрыть параметры</a>
-                  <button type="submit" class="btn btn-primary">Отправить</button>
+              <div class="col-md-7 pull-right">
+                <div class="row">
+                  <div class="col-sm-8 margin-vertical">
+                      <a href="#" class="margin-horizontal link-decoration text-muted">Сбросить параметры</a>
+                      <a href="#" class="margin-horizontal link-decoration text-muted">Скрыть параметры</a>
+                  </div>
+                  <div class="col-sm-4"> <button type="submit" class="btn btn-primary btn-lg">Найти</button></div>
                 </div>
               </div>
             </div>
@@ -194,16 +198,16 @@
                             <div class="col-md-7">
                                 <div class="caption">
                                     <h4>Иванов Алексей Сергеевич <i class="icon-icon-accept" aria-hidden="true"></i></h4>
-                                    <div class="labels-wrap">
-                                        <span class="label label-success">Отлично</span><span class="text-muted">9.4 из 10</span>
-                                        <span class="text-muted">Отзывы: <span>21</span></span>
-                                        <span class="text-muted">Сделки: <span>28</span></span>
+                                    <div>
+                                        <span class="label label-success">Отлично</span><span class="text-muted panel-padding text-description">9.4 из 10</span>
+                                        <span class="text-muted text-description">Отзывы: <span class="text-description">21</span></span>
+                                        <span class="text-muted panel-padding text-description">Сделки: <span class="text-description">28</span></span>
                                     </div>
                                     <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
                                     <p class="text-description margin-vertical">Подберу лучшее предложение на рынке с гарантией технической и юридической чистоты. Срок подбора 2 недели. Если в установленный срок не подберу достойный автомобиль, верну деньги.</p>
                                 </div>
                                 <div>
-                                    <span class="text-muted text-description">Навыки:</span>
+                                    <span><strong>Навыки:</strong></span>
                                     <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
                                     <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
                                 </div>
@@ -226,16 +230,16 @@
                             <div class="col-md-7">
                                 <div class="caption">
                                     <h4>Козаков Петр Николаевич <i class="icon-icon-accept" aria-hidden="true"></i></h4>
-                                    <div class="labels-wrap">
-                                        <span class="label label-success">Отлично</span><span class="text-muted">9.3 из 10</span>
-                                        <span class="text-muted">Отзывы: <span>19</span></span>
-                                        <span class="text-muted">Сделки: <span>19</span></span>
+                                    <div>
+                                        <span class="label label-success">Отлично</span><span class="text-muted text-description panel-padding">9.3 из 10</span>
+                                        <span class="text-muted text-description">Отзывы: <span class="text-description">19</span></span>
+                                        <span class="text-muted text-description panel-padding">Сделки: <span class="text-description">19</span></span>
                                     </div>
                                     <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
                                     <p class="text-description margin-vertical">Помогу Вам удачно подобрать, тщательно проверить и выгодно купить подержанный автомобиль: проведем техническую и юридическую проверку автомобиля перед покупкой, включая проверку на угон (розыск) и другое. </p>
                                 </div>
                                 <div>
-                                    <span class="text-muted text-description">Навыки:</span>
+                                    <span><strong>Навыки:</strong></span>
                                     <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
                                     <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
                                     <button type="button" class="btn btn-back btn-skills">Автокриминалист</button>
@@ -259,16 +263,16 @@
                             <div class="col-md-7">
                                 <div class="caption">
                                     <h4>Мишинкин Даниил Алексеевич <i class="icon-icon-accept" aria-hidden="true"></i></h4>
-                                    <div class="labels-wrap">
-                                        <span class="label label-success">Отлично</span><span class="text-muted">9.1 из 10</span>
-                                        <span class="text-muted">Отзывы: <span>18</span></span>
-                                        <span class="text-muted">Сделки: <span>21</span></span>
+                                    <div>
+                                        <span class="label label-success">Отлично</span><span class="text-muted text-description panel-padding">9.1 из 10</span>
+                                        <span class="text-muted text-description">Отзывы: <span class="text-description">18</span></span>
+                                        <span class="text-muted text-description panel-padding">Сделки: <span class="text-description">21</span></span>
                                     </div>
                                     <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
                                     <p class="text-description margin-vertical">Подберу лучшее предложение на рынке с гарантией технической и юридической чистоты. Срок подбора 2 недели. Если в установленный срок не подберу достойный автомобиль, верну деньги.</p>
                                 </div>
                                 <div>
-                                    <span class="text-muted text-description">Навыки:</span>
+                                    <span><strong>Навыки:</strong></span>
                                     <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
                                     <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
                                     <button type="button" class="btn btn-back btn-skills">Механик</button>
@@ -292,16 +296,16 @@
                             <div class="col-md-7">
                                 <div class="caption">
                                     <h4>Кузнецов Сергей Витальевич <i class="icon-icon-accept" aria-hidden="true"></i></h4>
-                                    <div class="labels-wrap">
-                                        <span class="label label-success">Отлично</span><span class="text-muted">9 из 10</span>
-                                        <span class="text-muted">Отзывы: <span>16</span></span>
-                                        <span class="text-muted">Сделки: <span>16</span></span>
+                                    <div>
+                                        <span class="label label-success">Отлично</span><span class="text-muted text-description panel-padding">9 из 10</span>
+                                        <span class="text-muted text-description">Отзывы: <span class="text-description">16</span></span>
+                                        <span class="text-muted text-description panel-padding">Сделки: <span class="text-description">16</span></span>
                                     </div>
                                     <p class="text-muted margin-vertical"><i class="fa fa-map-marker" aria-hidden="true"></i>Работаю в г. Москва и Московской области</p>
                                     <p class="text-description margin-vertical">За это время у меня накопился огромный опыт, позволяющий учитывать все нюансы подбираемого автомобиля. 105 параметров проверкипозволяют нам подбирать лучшие авто для моих клиентов.</p>
                                 </div>
                                 <div>
-                                    <span class="text-muted text-description">Навыки:</span>
+                                    <span><strong>Навыки:</strong></span>
                                     <button type="button" class="btn btn-back btn-skills">Автоэлектроника</button>
                                     <button type="button" class="btn btn-back btn-skills">Диагностика двигателя</button>
                                     <button type="button" class="btn btn-back btn-skills">Механик</button>
