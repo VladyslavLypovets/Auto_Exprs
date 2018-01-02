@@ -1011,5 +1011,26 @@ ul
 
 .no-margin-bottom
   margin-bottom: 0
+.fa-th
+  margin: 0 8px
+.sex
+  input[type="radio"]
+    display: none
+    &~.btn-default
+      margin-bottom: 0
+      font-size: 13px
+    &:checked
+      &~.btn-default
+        background: $water-blue
+        border-color: $water-blue
+        color: $white
+        margin-bottom: 0
+        &:hover, &:focus, &:active
+          background: $btn-primary_hover
+          border-color: $btn-primary_hover
+          color: $white
+
+  label
+    width: 100%
 @import "media"
 // Всегда в конце
