@@ -1142,6 +1142,43 @@ dl
         padding-left: 30px
         border: 1px solid #ddd
 
+.modal-content
+  .fa-star
+    margin-left: 0
+  &.panel
+    border: none
+  .panel-body
+    border-radius: 0
+  .btn-add_img
+    border: solid 2px #e8e8e8
+    a
+      opacity: 1
+      box-shadow: none
+      i
+        color: #ddd
+      &:hover
+        opacity: 1
+        box-shadow: none
+        color: #ddd
+.modal_payment
+  overflow: auto
+  height: 380px
+  .col-sm-4
+    input[type="radio"]
+      display: none
+      &~label
+        border: 1px solid #ddd
+        display: block
+        width: 100%
+        margin-bottom: 0
+        img
+          margin: 0 auto
+      &:checked
+        &~label
+          border: solid 1px #67a950
+
+
+
 
 
 @import "media"
