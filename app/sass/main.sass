@@ -76,6 +76,8 @@ label
     background: $btn-primary_hover
     border-color: $btn-primary_hover
     color: $white
+  .text-muted
+    color: $white
 
 .btn-warning
   background: $sun-yellow
@@ -784,6 +786,7 @@ textarea
   input
     display: none
   label
+    padding-left: 15px
     color: $color-muted
     width: 100%
     cursor: pointer
@@ -868,9 +871,9 @@ ul
     color: #ffffff
     border-color: 1px solid #4caf50
 
-.fa-camera, .fa-video-camera
+.fa-camera, .fa-youtube-play
   color: #1b98de
-  font-size: 13px
+  font-size: 15px
 
 
 /*=====Настройки Платежные======*/
@@ -1048,8 +1051,12 @@ ul
   padding: 0
 .fa-star
   font-size: 14px
-  margin-left: 15px
+  margin-left: 10px
   color: #ffc107
+  &:first-child
+    margin-left: 0
+  &.fa-star-muted
+    color: $gray
 .text-danger
   color: $red
 .text-success
@@ -1091,7 +1098,7 @@ ul
     &:before
       position: absolute
       top: 0
-      left: -20px
+      left: -30px
       display: block
       content: '\f00d'
       font-family: 'FontAwesome'
@@ -1133,14 +1140,93 @@ dl
   h6
     font-size: 19px
     margin: 0
+.panel-default
+  p
+    strong
+      i
+        padding-right: 0
 .table
   tbody
     tr
-      th
-        border: 1px solid #ddd
       td
-        padding-left: 30px
-        border: 1px solid #ddd
+        border-bottom: 1px solid #ddd
+      &:last-child
+        td
+          border-bottom: none
+      &:first-child
+        td
+          border-top: none
+.fa-green
+  color: $mid-green
+.fa-blue
+  color: $water-blue
+.modal-header, .modal-footer
+  border: none
+.auto_img_slider
+  position: relative
+  .controll-wrapper
+    position: absolute
+    bottom: 3px
+    left: 50%
+    display: flex
+    justify-content: center
+    transform: translateX(-50%)
+    z-index: 2
+    .controll-image
+      display: block
+      width: 30px
+      margin-right: 5px
+      height: 4px
+      background-color: $gray
+      &:last-child
+        margin-right: 0
+      &.active
+        background-color: $water-blue
+.visible-image
+  img
+    display: none
+    &.active
+      display: block
+.hover-container
+  position: absolute
+  z-index: 8
+  left: 15px
+  top: 0
+  display: flex
+  width: calc(100% - 30px)
+  height: 100%
+  .hover-column
+    width: 20%
+    height: 100%
+.reviews
+  padding-left: 35px
+  li
+    position: relative
+    margin-top: 16px
+    &::before
+      position: absolute
+      font-family: $font-awesome
+      left: -35px
+      top: 0
+      width: 20px
+      height: 20px
+      display: flex
+      font-size: 12px
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      border: 2px solid $black
+    &.plus
+      &::before
+        content: "\f067"
+        color: $mid-green
+        border-color: $mid-green
+    &.minus
+      &::before
+        content: "\f068"
+        color: $color-muted
+        border-color: $color-muted
+
 
 .modal-content
   .fa-star
@@ -1176,8 +1262,6 @@ dl
       &:checked
         &~label
           border: solid 1px #67a950
-
-
 
 
 

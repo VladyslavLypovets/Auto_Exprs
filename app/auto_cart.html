@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Карточка проверенного авто</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<p><i class="fa fa-location-arrow" aria-hidden="true"></i> г.Москва</p>
+					</div>
+					<div class="col-xs-6 text-right">
+						<p>Валюта: <i class="fa fa-rub" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar">
+		  <div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+				    <div class="navbar-header cleafix">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" class="img-responsive"></a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">Каталог подборщиков</a></li>
+				        <li><a href="#">Проверенные авто</a></li>
+				        <li><a href="#">Поиск</a></li>
+								<li><a href="#">Блог</a> <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Войти</a></li>
+				      </ul>
+				    </div>
+					</div>
+				</div>
+		  </div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+				<ul class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li>Блог</li>
+				</ul>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 margin-vertical">
+					<div class="row">
+						<div class="col-md-3">
+							<button type="button" class="btn btn-default btn-lg text-description">Написать сообщение</button>
+						</div>
+						<div class="col-md-4 panel-padding col-md-offset-2">
+								<span class="text-decoration text-muted">Стоимость отчета <span><strong>500 руб.</strong></span></span>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-warning btn-lg text-description">Купить отчет</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 auto_img_slider margin-vertical">
+							<div class='controll-wrapper'>
+									<span class='controll-image'></span>
+									<span class='controll-image'></span>
+									<span class='controll-image'></span>
+									<span class='controll-image active'></span>
+									<span class='controll-image'></span>
+							</div>
+							<div class='hover-container'>
+									<div class='hover-column' data-pos='1'></div>
+									<div class='hover-column' data-pos='2'></div>
+									<div class='hover-column' data-pos='3'></div>
+									<div class='hover-column' data-pos='4'></div>
+									<div class='hover-column' data-pos='5'></div>
+							</div>
+							<a class='visible-image' href="#">
+									<img src="img/car_5.jpg" alt="zimnie_shini" class="img-responsive">
+									<img src="img/car_1.jpg" alt="zimnie_shini" class="img-responsive">
+									<img src="img/car_2.jpg" alt="zimnie_shini" class="img-responsive">
+									<img src="img/car_3.jpg" alt="zimnie_shini" class="img-responsive active">
+									<img src="img/car_4.jpg" alt="zimnie_shini" class="img-responsive">
+							</a>
+            </div>
+						<div class="col-md-8 line-height">
+              <h5>Mercedes Benz</h5>
+              <p class="text-description">2015, 9 000 км, седан, серый, 3.0 АТ (265 л.с.), дизель, полный</p>
+              <p class="text-description">
+                  <strong>Стоимость авто:</strong>
+                  <span>1 520 000 руб.</span>
+              </p>
+              <p class="text-description">
+                  <strong>Дата проверки:</strong>
+                  <span>31.07.17</span>
+              </p>
+              <p class="text-description">
+                  <strong>Эксперт:</strong>
+                  <span>Иванов Алексей Сергеевич</span>
+                  <span class="margin-horizontal">
+                      <i class="icon-icon-accept" aria-hidden="true"></i>
+                      <span class="label label-success">Отлично 9.4</span>
+                  </span>
+              </p>
+              <p class="text-description">
+                  <strong>Заключение:</strong>
+                  <span>Автомобиль в отличном состоянии.Реальный пробег.Рекомендую к покупке.</span>
+              </p>
+              <p class="text-description">
+                  <strong>Продавец:</strong>
+                  <span>Миронов Вячеслав</span>
+                  <a href="tel:" class="margin-horizontal">
+                      <i class="fa fa-phone text-muted" aria-hidden="true"></i>
+                      <span class="text-muted">8 (800) 241 52 01</span>
+                  </a>
+              </p>
+              <div class="margin-vertical">
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="text-muted text-small"><span>г.Москва</span></span>
+              </div>
+            </div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="img/icon-1.svg" alt="svg-icon" class="img-responsive margin-vertical">
+								</div>
+								<div class="col-md-8">
+									<h4>Кузов <br>
+										<span><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
+									</h4>
+								</div>
+							</div>
+							<ul class="list-success list-unstyled">
+								<li>Крепёжные элементы капота без повреждений и следов демонтажа</li>
+								<li>Багажник чист, без загрязнений, следов влаги и посторонних запахов</li>
+							</ul>
+							<ul class="list-danger list-unstyled">
+								<li>Есть повреждения кузова</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="img/icon-2.svg" alt="svg-icon" class="img-responsive margin-vertical">
+								</div>
+								<div class="col-md-8">
+									<h4>Интерьер<br>
+										<span><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star fa-star-muted" aria-hidden="true"></i></span>
+									</h4>
+								</div>
+							</div>
+							<ul class="list-success list-unstyled">
+								<li>Передняя панель без дефектов, повреждений и загрязнений</li>
+								<li>Внутренняя отделка салона и сиденья без повреждений</li>
+								<li>Привод стеклоподъёмников исправен</li>
+							</ul>
+							<ul class="list-danger list-unstyled">
+								<li>Сиденье водителя, состояние обивки и валиков поддержки: загрязнение, потертость</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="img/icon-3.svg" alt="svg-icon" class="img-responsive margin-vertical">
+								</div>
+								<div class="col-md-8">
+									<h4>Техническое состояние<br>
+										<span><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star fa-star-muted" aria-hidden="true"></i></span>
+									</h4>
+								</div>
+							</div>
+							<ul class="list-success list-unstyled">
+								<li>Коробка передач в исправном состоянии</li>
+								<li>Двигатель работает ровно, без посторонних шумов</li>
+								<li>Тормозные шланги и трубки в норме, без повреждений</li>
+							</ul>
+							<ul class="list-danger list-unstyled">
+								<li>Рабочая тормозная система - проверка на стенде: есть неисправности</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="img/icon-4.svg" alt="svg-icon" class="img-responsive margin-vertical">
+								</div>
+								<div class="col-md-8">
+									<h4>Документы и прочее<br>
+										<span><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
+									</h4>
+								</div>
+							</div>
+							<ul class="list-success list-unstyled">
+								<li>ПТС: оригинал</li>
+								<li>Автомобиль растаможен</li>
+								<li>Количество владельцев по ПТС: 2</li>
+								<li>Автомобиль прошел все плановые ТО</li>
+								<li>Инструкция к машине: есть</li>
+							</ul>
+							<ul class="list-danger list-unstyled">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<p class="margin-vertical">Еще предложения</p>
+					<div class="panel panel-default">
+						<div class="panel-body panel-padding">
+							<div class="cleafix">
+								<label class="no-margin-bottom">BMW 3</label>
+								<span class="pull-right text-description"><strong>Отчет: 500 руб.</strong></span>
+							</div>
+							<span class="text-description"><strong>1 515 000 руб.</strong></span>
+							<p><strong>Иванов Алексей Сергеевич<i class="icon-icon-accept" aria-hidden="true"></i></strong></p>
+							<p>Автомобиль в отличном состоянии. Реальный пробег. Рекомендую к покупке.</p>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body panel-padding">
+							<div class="cleafix">
+								<label class="no-margin-bottom">BMW 3</label>
+								<span class="pull-right text-description"><strong>Отчет: 500 руб.</strong></span>
+							</div>
+							<span class="text-description"><strong>1 515 000 руб.</strong></span>
+							<p><strong>Иванов Алексей Сергеевич<i class="icon-icon-accept" aria-hidden="true"></i></strong></p>
+							<p>Автомобиль в отличном состоянии. Реальный пробег. Рекомендую к покупке.</p>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body panel-padding">
+							<div class="cleafix">
+								<label class="no-margin-bottom">BMW 3</label>
+								<span class="pull-right text-description"><strong>Отчет: 500 руб.</strong></span>
+							</div>
+							<span class="text-description"><strong>1 515 000 руб.</strong></span>
+							<p><strong>Иванов Алексей Сергеевич<i class="icon-icon-accept" aria-hidden="true"></i></strong></p>
+							<p>Автомобиль в отличном состоянии. Реальный пробег. Рекомендую к покупке.</p>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body panel-padding">
+							<div class="cleafix">
+								<label class="no-margin-bottom">BMW 3</label>
+								<span class="pull-right text-description"><strong>Отчет: 500 руб.</strong></span>
+							</div>
+							<span class="text-description"><strong>1 515 000 руб.</strong></span>
+							<p><strong>Иванов Алексей Сергеевич<i class="icon-icon-accept" aria-hidden="true"></i></strong></p>
+							<p>Автомобиль в отличном состоянии. Реальный пробег. Рекомендую к покупке.</p>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body panel-padding">
+							<div class="cleafix">
+								<label class="no-margin-bottom">BMW 3</label>
+								<span class="pull-right text-description"><strong>Отчет: 500 руб.</strong></span>
+							</div>
+							<span class="text-description"><strong>1 515 000 руб.</strong></span>
+							<p><strong>Иванов Алексей Сергеевич<i class="icon-icon-accept" aria-hidden="true"></i></strong></p>
+							<p>Автомобиль в отличном состоянии. Реальный пробег. Рекомендую к покупке.</p>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body panel-padding">
+							<div class="cleafix">
+								<label class="no-margin-bottom">BMW 3</label>
+								<span class="pull-right text-description"><strong>Отчет: 500 руб.</strong></span>
+							</div>
+							<span class="text-description"><strong>1 515 000 руб.</strong></span>
+							<p><strong>Иванов Алексей Сергеевич<i class="icon-icon-accept" aria-hidden="true"></i></strong></p>
+							<p>Автомобиль в отличном состоянии. Реальный пробег. Рекомендую к покупке.</p>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary btn-lg">Показать другие</button>
+				</div>
+			</div>
+			<div class="margin-vertical">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4>Список замечаний по кузову</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_1.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Нижние (защитные) элементы переднего бампера</label>
+											<p>трещина, многочисленные царапины, вмятина средней величины</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_2.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Заднее правое крыло</label>
+											<p>очаги коррозии, некачественный ремонт, деталь подвергалась мелкому ремонту, восстановлено лкп</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 margin-vertical">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_3.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Лобовое стекло автомобиля</label>
+											<p>очаги коррозии, некачественный ремонт, деталь подвергалась мелкому ремонту, восстановлено лкп</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 margin-vertical">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_1.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Нижние (защитные) элементы переднего бампера</label>
+											<p>трещина, многочисленные царапины, вмятина средней величины</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_2.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Заднее правое крыло</label>
+											<p>очаги коррозии, некачественный ремонт, деталь подвергалась мелкому ремонту, восстановлено лкп</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_3.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Лобовое стекло автомобиля</label>
+											<p>очаги коррозии, некачественный ремонт, деталь подвергалась мелкому ремонту, восстановлено лкп</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 margin-vertical">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_1.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Нижние (защитные) элементы переднего бампера</label>
+											<p>трещина, многочисленные царапины, вмятина средней величины</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 margin-vertical">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="img/car-detail_2.png" alt="detail" class="img-responsive show_more">
+									</div>
+									<div class="col-sm-8">
+										<div class="margin-vertical">
+											<label>	Заднее правое крыло</label>
+											<p>очаги коррозии, некачественный ремонт, деталь подвергалась мелкому ремонту, восстановлено лкп</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4>Данные по автомобилю</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">VIN</td>
+							        <td>WAUZZZ8V*F1****08</td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Марка</td>
+							        <td>BMW</td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Модель автомобиля</td>
+							        <td>3</td>
+							      </tr>
+										<tr>
+										 <td class="text-muted">Кузов</td>
+										 <td>седан</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Тип ТС</td>
+										 <td>легковой</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Категория ТС</td>
+										 <td>B</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Год изготовления</td>
+										 <td>2014</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Модель, No двигателя</td>
+										 <td>CZCA</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Цвет кузова</td>
+										 <td>черный</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Мощность (кВт/л.с.)</td>
+										 <td>92/125</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Объем двигателя (куб. см.)</td>
+										 <td>1398</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Вид топлива бензин/дизель</td>
+										 <td>бензи</td>
+									 </tr>
+							    </tbody>
+								</table>
+							</div>
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">ПТС серия/номер</td>
+							        <td>не предоставлен</td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">История по "Автокод"</td>
+							        <td>проверена</td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Таможня</td>
+							        <td>растоможен</td>
+							      </tr>
+										<tr>
+										 <td class="text-muted">Количество владельцев</td>
+										 <td>1</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Расположение руля</td>
+										 <td>левый</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Количество ключей зажигания</td>
+										 <td>2</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Количество мест в автомобиле</td>
+										 <td>5</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Пробег, км</td>
+										 <td>105088</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Коробка передач</td>
+										 <td>робот</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Привод</td>
+										 <td>передний</td>
+									 </tr>
+									 <tr>
+										 <td class="text-muted">Тип подвески</td>
+										 <td>стандартная</td>
+									 </tr>
+								 </tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4>Техническое состояние</h4>
+						<label>Тормозная система</label>
+						<div class="row">
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость - <br> проверка уровня</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость -<br> температура кипения</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Рабочая тормозная система -<br> проверка на стенде</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td>есть неисправности</td>
+							      </tr>
+							    </tbody>
+								</table>
+							</div>
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">Тормозные шланги и трубки</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Состояние колодок/дисков</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Привод стояночного тормоза <br> (тросы/тяги)</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							    </tbody>
+								</table>
+							</div>
+						</div>
+						<label>Двигатель</label>
+						<div class="row">
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость - <br> проверка уровня</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость -<br> температура кипения</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Рабочая тормозная система -<br> проверка на стенде</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							    </tbody>
+								</table>
+							</div>
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость - <br> проверка уровня</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость -<br> температура кипения</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Рабочая тормозная система -<br> проверка на стенде</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							    </tbody>
+								</table>
+							</div>
+						</div>
+						<label>Салон</label>
+						<div class="row">
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость - <br> проверка уровня</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i>  <label>потертости</label>  <a href="#"><i class="fa fa-camera fa-blue" aria-hidden="true"></i></a></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость -<br> температура кипения</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Рабочая тормозная система -<br> проверка на стенде</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><label>черный</label> <a href="#"><i class="fa fa-camera fa-blue" aria-hidden="true"></i></a></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><label>кожа</label> <a href="#"><i class="fa fa-camera fa-blue" aria-hidden="true"></i></a></td>
+							      </tr>
+							    </tbody>
+								</table>
+							</div>
+							<div class="col-md-6">
+								<table class="table">
+									<tbody>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость - <br> проверка уровня</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Тормозная жидкость -<br> температура кипения</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+							      <tr>
+							        <td class="text-muted">Рабочая тормозная система -<br> проверка на стенде</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><i class="fa fa-check fa-2x fa-green" aria-hidden="true"></i></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><label>черный</label></td>
+							      </tr>
+										<tr>
+							        <td class="text-muted">Стояночный тормоз</td>
+							        <td><label>кожа</label></td>
+							      </tr>
+							    </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="#"><img src="img/footer_logo.svg" alt="logo" class="img-responsive"></a>
+					<a href="#">Топовые автоэксперты России</a>
+					<a href="#" class="mobile_link">Мобильная версия</a>
+				</div>
+				<div class="col-md-2">
+					<a href="#">Главная</a>
+					<a href="#">Автоэксперты</a>
+					<a href="#">Провереные авто</a>
+					<a href="#">Рейтинг автоэкспертов</a>
+				</div>
+				<div class="col-md-2">
+					<a href="#">О сервисе</a>
+					<a href="#">Условия и гарантии</a>
+					<a href="#">Помощь</a>
+					<a href="#">О компании</a>
+				</div>
+				<div class="col-md-4 col-md-offset-1">
+					<h5>Мы в соц.сетях</h5>
+					<ul class="list-style list-inline">
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-odnoklassniki fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<h5>Пополнение баланса</h5>
+					<ul class="list-style list-inline pay">
+						<li>
+							<a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<a href="#">Доступно 24 способа пополнения</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-left">
+					<a href="tel:8 (800) 543-16-01">8 (800) 543-16-01 с 9:00 до 20:00 мск</a>
+				</div>
+				<div class="col-md-4 text-left">
+					<a> 419021, Россия, г. Москва, ул. Пушкина 1</a>
+				</div>
+				<div class="col-md-4 text-right">
+					<a href="mailto:contact@avtpodbor.ru">ООО "Автоподбор"    contact@avtpodbor.ru</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-left">
+					<p>© 2017 | ООО "Автоподбор"</p>
+				</div>
+				<div class="col-md-9 text-right">
+					<p>Информация на сайте autopodbor.ru носит ознакомительный характер и не является публичной офертой.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
