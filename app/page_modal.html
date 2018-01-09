@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Modal Desktop</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+<!-- Modal Take rate-->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_takeRate">Take rate</button>
+
+<div id="myModal_takeRate" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <form action="#">
+            <div class="modal-content panel panel-default">
+            <div class="panel-body">
+                <h5><strong>Оцените сотрудничество</strong></h5>
+                <p class="text-description margin-vertical">Поставьте оценку от 1-го до 10 по следующим критериям</p>
+                <div class="margin-vertical">
+                    <label class="text-description"><strong>Качество еды:</strong></label>
+                    <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="margin-vertical">
+                    <label class="text-description"><strong>Соотношение цена/качество:</strong></label>
+                    <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-muted" aria-hidden="true"></i>
+                        <i class="fa" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="margin-vertical">
+                    <label class="text-description"><strong>Время доставки:</strong></label>
+                    <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div  class="margin-vertical">
+                    <h5><strong>Не могли бы вы нам рассказать немного больше?</strong></h5>
+                </div>
+                <div class="margin-horizontal">
+                    <label class="margin-vertical">Заголовок вашего отзыва</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" id="comment1" placeholder="Подбор авто BMW 3">
+                    </div>
+                </div>
+                <div class="margin-horizontal">
+                    <label>Что вам понравилось?</label>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="8" id="comment"></textarea>
+                        </div>
+                </div>
+                <div class="margin-horizontal">
+                    <label>Что вам не понравилось?</label>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="8" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a href="#" class="text-muted" data-dismiss="modal">Отмена</a>
+                    <button type="submit" class="btn btn-success margin-horizontal">Оставить отзыв</button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Modal Add social-->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_addSocial">Add social</button>
+<div id="myModal_addSocial" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Добавление профиля соц.сети</strong></h5>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-6">Социальная сеть</label>
+                            <div class="col-sm-6">
+                                <select class="selectpicker">
+                                    <option>Twitter</option>
+                                    <option>Twitter</option>
+                                    <option>Twitter</option>
+                                    <option>Twitter</option>
+                                    <option>Twitter</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-6">Ссылка на профиль</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control input-lg" id="comment1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center panel-padding">
+                        <a href="#" class="text-muted" data-dismiss="modal">Отмена</a>
+                        <button type="submit" class="btn btn-success margin-horizontal">Оставить отзыв</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Add contacts-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_addContacts">Add contacts</button>
+<div id="myModal_addContacts" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Добавить контакты</strong></h5>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4">Город</label>
+                            <div class="col-sm-8 ">
+                                <span class="select-lg"></span>
+                                <select class="selectpicker">
+                                    <option>Москва</option>
+                                    <option>Москва</option>
+                                    <option>Москва</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4">Адрес</label>
+                            <div class="col-sm-8">
+                                <input type="address" class="form-control input-lg" id="address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                       <div class="row">
+                           <label class="col-sm-4" for="phone">Телефон</label>
+                           <div class="col-sm-8">
+                               <input type="tel" class="form-control input-lg" id="phone">
+                           </div>
+                       </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4" for="email">Email</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control input-lg" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4" for="whatsapp">Whatsapp</label>
+                            <div class="col-sm-8">
+                                <input type="whatsapp" class="form-control input-lg" id="whatsapp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4" for="viber">Viber</label>
+                            <div class="col-sm-8">
+                                <input type="viber" class="form-control input-lg" id="viber">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4" for="telegram">Telegram</label>
+                            <div class="col-sm-8">
+                                <input type="telegram" class="form-control input-lg" id="telegram">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <label class="col-sm-4" for="skype">Skype</label>
+                            <div class="col-sm-8">
+                                <input type="skype" class="form-control input-lg" id="skype">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center panel-padding">
+                        <a href="#" class="text-muted" data-dismiss="modal">Отмена</a>
+                        <button type="submit" class="btn btn-success margin-horizontal">Оставить отзыв</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal Add region-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_addRegion">Add region</button>
+<div id="myModal_addRegion" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Добавить регион</strong></h5>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="margin-vertical"><strong>Указать на карте</strong></p>
+                                <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A0e76b575a8880c766464e2d40d3777068e4e21cb1c23eed727bb5e38275ecd1b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="region">Регион</label>
+                                    <input type="region" class="form-control" id="region" placeholder="г.Москва">
+                                    <p class="text-description text-muted panel-padding">Точный адрес Вашего офиса, с указанием этажа и номера</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Адрес</label>
+                                    <input type="address" class="form-control" id="address">
+                                </div>
+                                <div class="form-group">
+                                    <label>Радиус оказания услуги</label>
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <input type="" class="form-control" placeholder="200">
+                                        </div>
+                                        <div class="col-md-2 panel-padding">
+                                            <span>км.</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-description text-muted panel-padding">Расстояние на которое вы готовы выехать для оказания услуги</p>
+                                </div>
+                                <div class="block-wrap">
+                                    <p><strong>Контакты для данного региона</strong></p>
+                                    <div class="margin-vertical">
+                                        <div class="row">
+                                            <label class="col-sm-4" for="tel">Телефон</label>
+                                            <div class="col-sm-8">
+                                                <input type="tel" class="form-control input-lg" id="tel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin-vertical">
+                                        <div class="row">
+                                            <label class="col-sm-4" for="email">Email</label>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control input-lg" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin-vertical">
+                                        <div class="row">
+                                            <label class="col-sm-4" for="whatsApp">WhatsApp</label>
+                                            <div class="col-sm-8">
+                                                <input type="whatsApp" class="form-control input-lg" id="whatsApp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="row">
+                                       <div class="col-md-12 text-right margin-vertical no-margin-bottom">
+                                           <a href="#" class="text-muted margin-horizontal" data-dismiss="modal">Отменить</a>
+                                           <button type="button" class="btn btn-info">Добавить</button>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal New section-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_newSection">New section</button>
+<div id="myModal_newSection" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Новый раздел</strong></h5>
+                    <div class="margin-vertical">
+                        <div class="form-group">
+                            <label for="region">Название раздела</label>
+                            <input type="region" class="form-control" id="region" placeholder="Например: Подобранные авто">
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="text-muted margin-horizontal" data-dismiss="modal">Отменить</a>
+                            <button type="button" class="btn btn-info">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Price-type-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_priceType">Price-type</button>
+<div id="myModal_priceType" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Выберите тип цены</strong></h5>
+                    <div class="margin-vertical">
+                            <div>
+                                <span class="checkbox-inline text-description">
+                                    <input type="checkbox">Работаю за фиксированную цену, зависящую от бюджета
+                                </span>
+                            </div>
+                            <div>
+                                <span class="checkbox-inline text-description">
+                                    <input type="checkbox">Работаю за % от бюджета
+                                </span>
+                            </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="text-muted margin-horizontal" data-dismiss="modal">Отменить</a>
+                            <button type="button" class="btn btn-info">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal New Work-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_newWork">New Work</button>
+<div id="myModal_newWork" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Добавление работы</strong></h5>
+                    <div class="margin-vertical">
+                        <div class="form-group">
+                            <label for="sel2">В раздел</label>
+                            <select class="form-control" id="sel2">
+                                <option>Автоподбор под ключ</option>
+                                <option>Автоподбор под ключ</option>
+                                <option>Автоподбор под ключ</option>
+                            </select>
+                        </div>
+                            <div class="form-group">
+                                <label>Поставленная задача</label>
+                                <textarea class="form-control" rows="8" id="comment"></textarea>
+                            </div>
+                        <div class="form-group">
+                            <label>Результат</label>
+                                <textarea class="form-control" rows="8" id="comment"></textarea>
+                        </div>
+                            <label>Фотографии</label>
+                            <div class="margin-vertical">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <input type="" class="form-control" placeholder="Нажмите чтобы загрузить">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button class="btn btn-default text-muted">Загрузить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row tech-states">
+                                <div class="col-md-12">
+                                    <ul class="list-style list-inline">
+                                        <li>
+                                            <img src="img/car-detail_1.png" alt="detail" class="img-responsive">
+                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <img src="img/car-detail_2.png" alt="detail" class="img-responsive">
+                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <img src="img/car-detail_1.png" alt="detail" class="img-responsive">
+                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <img src="img/car-detail_3.png" alt="detail" class="img-responsive">
+                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="region">Видео</label>
+                                <input type="region" class="form-control" id="region" placeholder="Вставьте ссылку на видео">
+                            </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="text-muted margin-horizontal" data-dismiss="modal">Отменить</a>
+                            <button type="button" class="btn btn-info">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal Add Warning-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_addWarning">Add Warning</button>
+<div id="myModal_addWarning" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Добавление замечания</strong></h5>
+                    <div class="margin-vertical">
+                        <label class="col-sm-6" for="sel2">В раздел</label>
+                        <div class="form-group col-sm-6">
+                            <select class="form-control" id="sel2">
+                                <option>Передний бампер</option>
+                                <option>Передний бампер</option>
+                                <option>Передний бампер</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Замечание</label>
+                            <textarea class="form-control" rows="8" id="comment"></textarea>
+                        </div>
+                        <div class="row tech-states">
+                            <ul class="col-md-12">
+                                <ul class="list-style list-inline">
+                                    <li>
+                                        <img src="img/car-detail_1.png" alt="detail" class="img-responsive">
+                                        <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <img src="img/car-detail_2.png" alt="detail" class="img-responsive">
+                                        <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <img src="img/car-detail_1.png" alt="detail" class="img-responsive">
+                                        <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <img src="img/car-detail_3.png" alt="detail" class="img-responsive">
+                                        <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="btn-add_img">
+                                        <a><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="text-muted margin-horizontal" data-dismiss="modal">Отмена</a>
+                            <button type="button" class="btn btn-info">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal Balance replenishment-->
+
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal_balance">Пополнение баланса</button>
+<div id="myModal_balance" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form action="#">
+            <div class="modal-content panel panel-default">
+                <div class="panel-body">
+                    <h5><strong>Пополнение баланса</strong></h5>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <div class="col-sm-6 text-description">На балансе</div>
+                            <div class="col-sm-6 text-right"><strong>20 000 руб.</strong></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label for="">Сумма пополнения в рублях</label>
+                            </div>
+                            <div class="col-sm-11">
+                                <input type="" class="form-control" placeholder="20 000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical form-group">
+                       <label>Способ пополнения</label>
+                    </div>
+                    <div class="row modal_payment">
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="webMoney" checked>
+                                <label for="webMoney">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="yandexMoney">
+                                <label for="yandexMoney">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                           <div class="row">
+                               <input type="radio" name="pay" id="qiwiWallet">
+                               <label for="qiwiWallet">
+                                   <img src="img/moneta_ru.png" class="img-responsive">
+                               </label>
+                           </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="moneta_ru">
+                                <label for="moneta_ru">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="moneta_ru1">
+                                <label for="moneta_ru1">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                          <div class="row">
+                              <input type="radio" name="pay" id="alfa">
+                              <label for="alfa">
+                                  <img src="img/moneta_ru.png" class="img-responsive">
+                              </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="bank">
+                                <label for="bank">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                           <div class="row">
+                               <input type="radio" name="pay" id="beeline">
+                               <label for="beeline">
+                                   <img src="img/moneta_ru.png" class="img-responsive">
+                               </label>
+                           </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="sex" id="paysafe">
+                                <label for="paysafe">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="bank1">
+                                <label for="bank1">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="pay" id="beeline1">
+                                <label for="beeline1">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div class="row">
+                                <input type="radio" name="sex" id="paysafe1">
+                                <label for="paysafe1">
+                                    <img src="img/moneta_ru.png" class="img-responsive">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <div class="col-sm-6 text-description"><p><strong>Комиссия платежной системы (5%)</strong></p> </div>
+                            <div class="col-sm-6 text-right text-danger"><strong>- 560 руб.</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="margin-vertical">
+                        <div class="row">
+                            <div class="col-sm-6 text-description"><p><strong>К выплате</strong></p></div>
+                            <div class="col-sm-6 text-right"><strong>17 400 руб.</strong></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center margin-vertical">
+                        <a href="#" class="text-muted margin-horizontal" data-dismiss="modal">Отмена</a>
+                        <button type="button" class="btn btn-success">Пополнить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
