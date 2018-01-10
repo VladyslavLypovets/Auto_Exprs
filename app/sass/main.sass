@@ -2,7 +2,6 @@
 @import "fonts"
 @import "libs"
 @import "vars"
-
 *
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
@@ -47,6 +46,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   opacity: 1
+
 /*=======Components-style=========*/
 label
   font-family: $semi-font
@@ -287,7 +287,6 @@ h5
   font-family: $default-font
 
 p
-  margin: 0
   font-size: 14px
   color: $black
   font-family: $default-font
@@ -1042,6 +1041,7 @@ ul
   align-items: center
   border: solid 2px $gray
   color: $gray
+  margin-bottom: 15px
 .no-margin-bottom
   margin-bottom: 0
 .select-lg
@@ -1163,6 +1163,7 @@ dl
 .modal-header, .modal-footer
   border: none
 .auto_img_slider
+  margin-top: 16px
   position: relative
   .controll-wrapper
     position: absolute
@@ -1262,7 +1263,8 @@ dl
       &:checked
         &~label
           border: solid 1px #67a950
-
+.panel-border-top
+  border-top: 1px solid $gray
 
 
 @import "media"
