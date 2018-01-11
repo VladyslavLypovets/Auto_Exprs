@@ -298,6 +298,7 @@ p
     color: $white
     padding: 8px 0
     display: inline-block
+    margin: 0
   .text-right
     p
       padding: 8px
@@ -490,11 +491,13 @@ strong
         margin-left: 13px
 
 .label
+  display: inline-block
   padding: 0 8px
   line-height: 21px
   border-radius: 100px
   font-weight: unset
   font-family: $default-font
+  margin-bottom: 5px
 
 .label-success
   background-color: $mid-green
@@ -618,7 +621,7 @@ strong
 
 .breadcrumb
   margin: 0px
-  padding: 8px 0
+  padding: 16px 0
   background: none
   li
     color: $water-blue
@@ -643,6 +646,8 @@ strong
     &:hover
       font-weight: 600
       text-decoration: none
+      p
+        font-weight: 400
 
 
 .breadcrumb
@@ -728,8 +733,6 @@ a
   color: $black
   font-size: 14px
   font-family: $default-font
-  &:hover
-    color: $black
 
 .margin-horizontal
   margin: 0 16px
@@ -1040,8 +1043,6 @@ ul
           background: $btn-primary_hover
           border-color: $btn-primary_hover
           color: $white
-  label
-    width: 100%
 .user-image-wrap
   padding: 32px
   display: flex
@@ -1292,6 +1293,8 @@ dl
   .fa-circle
     color: $mid-green
     font-size: 6px
+    &.fa-stack-2x
+      font-size: 2em
 .message
     overflow: auto
     height: 390px
@@ -1299,7 +1302,7 @@ button
   &.dropdown-toggle
     background-color: $white
     &:hover
-      border: #1b98de
+      border-color: #1b98de
       background-color: unset
 .open
   .dropdown-toggle
@@ -1327,7 +1330,22 @@ button
       &:focus
         background-color: #1b98de
         color: $white
-
+.input-sm
+  width: 80px
+.input-md
+  width: 120px
+.panel-default
+  .panel-heading
+    border: 1px solid #cfcfcf
+main
+  min-height: 600px
+*[class^=fa]
+  &:before
+    font-size: 1.2em
+i
+  &.fa-stack-1x
+    margin-top: 5px
+    padding-right: 0
 
 @import "media"
 // Всегда в конце
