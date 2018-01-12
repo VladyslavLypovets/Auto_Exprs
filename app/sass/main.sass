@@ -56,7 +56,6 @@ label
 
 
 .btn
-  height: 40px
   transition: all 0.3s
 
 .btn-success
@@ -479,7 +478,7 @@ strong
         opacity: 1
   .caption
     padding: 9px 0
-    
+
     .expert_name
       position: relative
       color: $black
@@ -638,14 +637,10 @@ strong
     font-size: 13px
 
 .list-group
-  padding-left: 15px
-  margin-bottom: 0
-  color: $water-blue
   a
     color: $water-blue
     &:hover
-      font-weight: 600
-      text-decoration: none
+      text-decoration: underline
       p
         font-weight: 400
 
@@ -726,7 +721,6 @@ a
 /*======Login====*/
 .btn-lg
   width: 100%
-  padding: 0
   margin-bottom: 16px
 
 a
@@ -751,10 +745,9 @@ a
 .list-group
   li
     margin-bottom: 15px
-  li
     &.active
       a
-        color: #1b98de
+        font-weight: 600
 
 .text-description
   font-size: 13px
@@ -804,7 +797,7 @@ textarea
     i
       margin-right: 10px
       color: $color-muted
-    
+
 .comments
   border: 1px solid #e8e8e8
   padding: 8px
@@ -1301,6 +1294,10 @@ dl
 button
   &.dropdown-toggle
     background-color: $white
+    &::after
+      font-family: $font-awesome
+      content: "\f107"
+
     &:hover
       border-color: #1b98de
       background-color: unset
@@ -1339,6 +1336,7 @@ button
     border: 1px solid #cfcfcf
 main
   min-height: 600px
+
 *[class^=fa]
   &:before
     font-size: 1.2em
@@ -1346,6 +1344,12 @@ i
   &.fa-stack-1x
     margin-top: 5px
     padding-right: 0
-
+.bs-caret
+  display: none
+.navbar-toggle
+  .icon-bar
+    background-color: $mid-green
+    width: 24px
+    height: 4px
 @import "media"
 // Всегда в конце
