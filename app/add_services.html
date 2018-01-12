@@ -76,21 +76,22 @@
             <li><a href="#">Главная</a></li>
             <li>Поиск автоэксперта</li>
         </ul>
-    </div>
-		<div class="container">
+        </div>
+		<form action="#" class="form-horizontal">
+            <div class="container">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-md-2">
-							<label class="margin-vertical">Выберите услугу</label>
+							<label class="control-label">Выберите услугу</label>
 						</div>
 						<div class="col-md-5">
 							<div class="form-group">
 									<span class="select-lg"></span>
 									<select class="selectpicker">
-											<option>Автоподбор под ключ</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
+                                        <option>Автоподбор под ключ</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
 									</select>
 							</div>
 						</div>
@@ -159,9 +160,9 @@
 								<li><strong>Срок</strong></li>
 								<li>&nbsp;</li>
 								<li>
-									<div class="form-group">
+									
 										<input type="text" class="form-control input-sm" placeholder="20">
-									</div>
+									
 								</li>
 								<li>
 									<select class="form-control" id="sel8">
@@ -180,15 +181,15 @@
 									до
 								</li>
 								<li>
-									<div class="form-group">
+									
 										<input type="text" class="form-control input-sm" placeholder="20">
-									</div>
+									
 								</li>
 								<li>
-									<div class="form-group">
+							
 										<p>&nbsp;</p>
                     <label class="checkbox-inline text-description"><input type="checkbox" value="">Не ограничено</label>
-									</div>
+									
 								</li>
 							</ul>
 							<ul class="list-inline">
@@ -224,8 +225,10 @@
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<div class="form-group">
-						<label>Описание услуги</label>
-						<textarea class="form-control" rows="8" id="comment"></textarea>
+						<div class="col-md-12">
+                            <label>Описание услуги</label>
+						      <textarea class="form-control" rows="8" id="comment"></textarea>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -261,24 +264,22 @@
 						<div class="col-md-4">
 							<ul class="list-inline">
 								<li>
-									<div class="form-group">
 										<input type="text" class="form-control input-md" placeholder="300 000 руб">
-									</div>
+									
 								</li>
 								<li>
 									&mdash;
 								</li>
 								<li>
-									<div class="form-group">
+									
 										<input type="text" class="form-control input-md" placeholder="900 000 руб">
-									</div>
+									
 								</li>
 							</ul>
 						</div>
 						<div class="col-md-4">
-							<div class="form-group">
 								<input type="text" class="form-control input-md" placeholder="40 000">
-							</div>
+							
 						</div>
 						<div class="col-md-1 text-right panel-padding">
 							<a href="#" class="text-muted"><i class="icon-icon-delete" aria-hidden="true"></i></a>
@@ -290,24 +291,24 @@
 						<div class="col-md-4">
 							<ul class="list-inline">
 								<li>
-									<div class="form-group">
+								
 										<input type="text" class="form-control input-md" placeholder="900 000 руб">
-									</div>
+									
 								</li>
 								<li>
 									&mdash;
 								</li>
 								<li>
-									<div class="form-group">
+									
 										<input type="text" class="form-control input-md" placeholder="10 500 000 руб">
-									</div>
+									
 								</li>
 							</ul>
 						</div>
 						<div class="col-md-4">
-							<div class="form-group">
+							
 								<input type="text" class="form-control input-md" placeholder="80 000">
-							</div>
+							
 						</div>
 						<div class="col-md-1 text-right panel-padding">
 							<a href="#" class="text-muted"><i class="icon-icon-delete" aria-hidden="true"></i></a>
@@ -346,36 +347,36 @@
 						<div class="col-md-4">
 							<ul class="list-inline">
 								<li>
-									<div class="form-group">
+									
 										<input type="text" class="form-control input-md" placeholder="300 000 руб">
-									</div>
+									
 								</li>
 								<li>
 									&mdash;
 								</li>
 								<li>
-									<div class="form-group">
+								
 										<input type="text" class="form-control input-md" placeholder="900 000 руб">
-									</div>
+								
 								</li>
 							</ul>
 						</div>
 						<div class="col-md-5">
 							<div class="row">
 								<div class="col-md-4">
-									<div class="form-group">
+									
 										<input type="text" class="form-control input-sm" placeholder="10%">
-									</div>
+									
 								</div>
 								<div class="col-md-4">
-									<div class="form-group">
+								
 										<input type="text" class="form-control input-md" placeholder="80 000">
-									</div>
+								
 								</div>
 								<div class="col-md-4">
-									<div class="form-group">
+								
 										<input type="text" class="form-control input-md" placeholder="250 000">
-									</div>
+								
 								</div>
 							</div>
 						</div>
@@ -417,6 +418,7 @@
 					<button type="submit" class="btn btn-success margin-horizontal">Добавить</button>
 			</div>
 		</div>
+        </form>
 	</main>
 	<footer>
 		<div class="container">
